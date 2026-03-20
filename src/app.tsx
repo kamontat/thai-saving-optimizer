@@ -1,7 +1,10 @@
+import Router from "./components/Router.tsx";
+import AppLayout from "./layouts/AppLayout.tsx";
+
 export default function App() {
 	return (
-		<main>
-			<h1>Single-file React App</h1>
-		</main>
+		<AppLayout>
+			<Router />
+		</AppLayout>
 	);
 }
