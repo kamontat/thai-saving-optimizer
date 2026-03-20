@@ -36,6 +36,7 @@ import {
 } from "./scb-fixed-deposits.ts";
 import { scbBonus24m, scbBonus36m } from "./scb-long-term.ts";
 import { scbSavings, scbEasySavings, scbJadTem } from "./scb-savings.ts";
+import { kbankFlexFamily } from "./kbank-flex-family.ts";
 import {
 	kbankFixed3m,
 	kbankFixed6m,
@@ -43,7 +44,9 @@ import {
 	kbankFixed24m,
 	kbankFixed36m,
 } from "./kbank-fixed-deposits.ts";
-import { kbankESavings, kbankEPocket } from "./kbank-savings.ts";
+import { kbankESavings, kbankEPocket, kbankSavings } from "./kbank-savings.ts";
+import { kbankSuperSenior } from "./kbank-super-senior.ts";
+import { kbankTaweesup } from "./kbank-taweesup.ts";
 
 export const products: Product[] = [
 	// Savings accounts
@@ -91,6 +94,7 @@ export const products: Product[] = [
 	scbBonus24m,
 	scbBonus36m,
 	// KBank Savings accounts
+	kbankSavings,
 	kbankESavings,
 	kbankEPocket,
 	// KBank Fixed deposits
@@ -99,4 +103,8 @@ export const products: Product[] = [
 	kbankFixed12m,
 	kbankFixed24m,
 	kbankFixed36m,
+	// KBank Fixed deposits (special)
+	kbankFlexFamily,
+	kbankSuperSenior,
+	kbankTaweesup,
 ];
