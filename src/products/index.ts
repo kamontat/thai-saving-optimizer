@@ -79,6 +79,28 @@ import {
 	cimbPhemkhaSabaiJai24m,
 	cimbPhemkhaSabaiJai36m,
 } from "./cimb/cimb-phemkha-sabai-jai.ts";
+import {
+	tcbSavings,
+	tcbBasicBanking,
+	tcbPlusAccountOne,
+	tcbPlusHi,
+	tcbPlusSpecial,
+	tcbTemKrapuk,
+	tcbBizPlus,
+	tcbBizDefined,
+} from "./tcb/tcb-savings.ts";
+import {
+	tcbFixed6m,
+	tcbFixed8m,
+	tcbFixed9m,
+	tcbFixed12m,
+	tcbFixed18m,
+	tcbFixed24m,
+	tcbFixed36m,
+} from "./tcb/tcb-fixed-deposits.ts";
+import { tcbFixedTunjai12m } from "./tcb/tcb-fixed-tunjai.ts";
+import { tcbHappySenior12m } from "./tcb/tcb-fixed-happy-senior.ts";
+import { tcbTaxFree24m, tcbTaxFree36m } from "./tcb/tcb-tax-free.ts";
 
 export const products: Product[] = [
 	// Savings accounts
@@ -170,4 +192,27 @@ export const products: Product[] = [
 	// CIMB Thai Long-term deposits (tax-free monthly savings)
 	cimbPhemkhaSabaiJai24m,
 	cimbPhemkhaSabaiJai36m,
+	// Thai Credit Bank Savings accounts
+	tcbSavings,
+	tcbBasicBanking,
+	tcbPlusAccountOne,
+	tcbPlusHi,
+	tcbPlusSpecial,
+	tcbTemKrapuk,
+	tcbBizPlus,
+	tcbBizDefined,
+	// Thai Credit Bank Fixed deposits
+	tcbFixed6m,
+	tcbFixed8m,
+	tcbFixed9m,
+	tcbFixed12m,
+	tcbFixed18m,
+	tcbFixed24m,
+	tcbFixed36m,
+	// Thai Credit Bank Fixed deposits (special)
+	tcbFixedTunjai12m,
+	tcbHappySenior12m,
+	// Thai Credit Bank Long-term deposits (tax-free)
+	tcbTaxFree24m,
+	tcbTaxFree36m,
 ];

@@ -30,6 +30,7 @@ Each bank has a dedicated reference file with fetch URLs, extraction instruction
 | KBank | [references/kbank.md](./references/kbank.md) |
 | UOB | [references/uob.md](./references/uob.md) |
 | CIMB Thai | [references/cimb.md](./references/cimb.md) |
+| Thai Credit Bank | [references/tcb.md](./references/tcb.md) |
 
 When validating a specific bank, read the corresponding reference file for detailed per-product fetch instructions.
 
@@ -56,6 +57,7 @@ Read the bank-specific reference file (see table above) for detailed per-product
 3. **KBank products** — JS-heavy pages. Use browser rendering if `fetch_webpage` returns empty. See [references/kbank.md](./references/kbank.md).
 4. **UOB products** — Savings pages show rates inline. Fixed deposit rates require the official rate PDF. See [references/uob.md](./references/uob.md).
 5. **Dime / Fin** — Same structure as KKP savings pages. See [references/kkp.md](./references/kkp.md).
+6. **TCB products** — JS-heavy pages. Rate tables are dynamically rendered. Use the Product Catalog PDF accessible from any product detail page under "รายละเอียดผลิตภัณฑ์". See [references/tcb.md](./references/tcb.md).
 
 **If a product page is unreachable**, the bank reference files include 3-4 fallback methods per bank (rate PDFs, interest rate overview pages, Google search, BOT aggregate data).
 

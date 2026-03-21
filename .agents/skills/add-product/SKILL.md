@@ -273,6 +273,7 @@ Use these established tags. Do not invent new tags without good reason.
 | Kasikornbank | `Kasikornbank (KBank)` | `kbank-` |
 | United Overseas Bank | `United Overseas Bank (UOB)` | `uob-` |
 | CIMB Thai | `CIMB Thai (CIMBT)` | `cimb-` |
+| Thai Credit Bank | `Thai Credit Bank (TCB)` | `tcb-` |
 
 When adding a new bank, pick a short lowercase prefix and use it consistently.
 
