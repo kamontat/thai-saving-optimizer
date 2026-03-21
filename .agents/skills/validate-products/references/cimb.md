@@ -10,6 +10,8 @@ CIMB Thai pages are JS-heavy (Adobe Experience Manager). Rate tables are rendere
 |------------|-----------|
 | `cimb-chill-d` | `https://www.cimbthai.com/th/personal/products/accounts/savings-account/chill-d-savings-by-cimb-thai-maximum-interest-at-2-aa.html` |
 | `cimb-speed-d-plus` | `https://www.cimbthai.com/th/personal/products/accounts/savings-account/speed-d-plus-savings-by-cimb-thai.html` |
+| `cimb-speed-savings` | `https://www.cimbthai.com/th/personal/products/accounts/savings-account/speed-savings.html` |
+| `cimb-basic-banking` | Rate PDF (see fallback) |
 
 **How to extract**: Rate tables appear inline on each product detail page as HTML tables with columns for balance tier and interest rate per annum.
 
@@ -38,3 +40,27 @@ CIMB Thai pages are JS-heavy (Adobe Experience Manager). Rate tables are rendere
 **Fallback methods**:
 1. Deposit interest rate PDF announcements: `https://www.cimbthai.com/th/personal/help-support/rates-charges/deposit-interest-rates/deposit-rates-general-fdr.html`
 2. Search for "CIMB Thai Fixed D อัตราดอกเบี้ย"
+
+## CIMB Thai Fixed Deposits (Passbook)
+
+| Product IDs | Fetch URL |
+|-------------|-----------|
+| `cimb-fixed-3m`, `cimb-fixed-6m`, `cimb-fixed-12m`, `cimb-fixed-24m`, `cimb-fixed-36m` | Rate PDF only |
+
+**How to extract**: Rates are in the rate announcement PDF (item 9 "เงินฝากประจำประเภทสมุดคู่ฝาก"). PDF is image-based — use OCR or visual inspection.
+
+## CIMB Thai Senior Fixed Deposit
+
+| Product ID | Fetch URL |
+|------------|-----------|
+| `cimb-senior-fixed-12m` | `https://www.cimbthai.com/th/personal/products/accounts/fixed-deposit-accounts/senior-fixed-deposit.html` |
+
+**How to extract**: Rate table under "อัตราดอกเบี้ย" section. Single rate for 12-month term.
+
+## CIMB Thai Phemkha Sabai Jai (Monthly Savings)
+
+| Product IDs | Fetch URL |
+|-------------|-----------|
+| `cimb-phemkha-sabai-jai-24m`, `cimb-phemkha-sabai-jai-36m` | Rate PDF only (item 15) |
+
+**How to extract**: Rates are in the rate announcement PDF (item 15 "เงินฝากประจำเพิ่มค่าสบายใจ"). PDF is image-based.
