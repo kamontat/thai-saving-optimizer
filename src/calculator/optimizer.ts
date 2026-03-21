@@ -21,8 +21,7 @@ export function optimizeAllocation(
 			if (current >= maxAllowed) continue;
 
 			if (
-				(product.type === "fixed-deposit" ||
-					product.type === "long-term") &&
+				(product.type === "fixed-deposit" || product.type === "long-term") &&
 				product.minDeposit !== undefined &&
 				current === 0 &&
 				remaining < product.minDeposit
@@ -40,6 +39,7 @@ export function optimizeAllocation(
 			// tier is selected without accounting for required lower-tier deposits.
 			for (let i = currentTierIdx; i < product.tiers.length; i++) {
 				const tier = product.tiers[i];
+				if (!tier) continue;
 				const tierMax =
 					tier.max === Number.POSITIVE_INFINITY
 						? current + remaining
