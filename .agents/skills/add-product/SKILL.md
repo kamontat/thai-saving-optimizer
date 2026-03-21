@@ -180,6 +180,7 @@ Existing reference files:
 - `scb.md` — SCB products
 - `kbank.md` — KBank products
 - `uob.md` — UOB products
+- `cimb.md` — CIMB Thai products
 
 #### If the bank already has a reference file
 
@@ -271,6 +272,7 @@ Use these established tags. Do not invent new tags without good reason.
 | Fin (by KKP) | `Kiatnakin Phatra (KKP)` | `fin-` |
 | Kasikornbank | `Kasikornbank (KBank)` | `kbank-` |
 | United Overseas Bank | `United Overseas Bank (UOB)` | `uob-` |
+| CIMB Thai | `CIMB Thai (CIMBT)` | `cimb-` |
 
 When adding a new bank, pick a short lowercase prefix and use it consistently.
 

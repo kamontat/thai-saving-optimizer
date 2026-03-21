@@ -29,6 +29,7 @@ Each bank has a dedicated reference file with fetch URLs, extraction instruction
 | SCB | [references/scb.md](./references/scb.md) |
 | KBank | [references/kbank.md](./references/kbank.md) |
 | UOB | [references/uob.md](./references/uob.md) |
+| CIMB Thai | [references/cimb.md](./references/cimb.md) |
 
 When validating a specific bank, read the corresponding reference file for detailed per-product fetch instructions.
 
