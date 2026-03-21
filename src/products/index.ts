@@ -59,12 +59,26 @@ import { uobStash } from "./uob-stash.ts";
 import { uobTmrwSavings } from "./uob-tmrw-savings.ts";
 import { cimbChillD } from "./cimb-chill-d.ts";
 import { cimbSpeedDPlus } from "./cimb-speed-d-plus.ts";
+import { cimbSpeedSavings } from "./cimb-speed-savings.ts";
+import { cimbBasicBanking } from "./cimb-basic-banking.ts";
 import {
 	cimbFixedD3m,
 	cimbFixedD6m,
 	cimbFixedD9m,
 	cimbFixedD12m,
 } from "./cimb-fixed-d.ts";
+import {
+	cimbFixed3m,
+	cimbFixed6m,
+	cimbFixed12m,
+	cimbFixed24m,
+	cimbFixed36m,
+} from "./cimb-fixed-deposits.ts";
+import { cimbSeniorFixed12m } from "./cimb-senior-fixed.ts";
+import {
+	cimbPhemkhaSabaiJai24m,
+	cimbPhemkhaSabaiJai36m,
+} from "./cimb-phemkha-sabai-jai.ts";
 
 export const products: Product[] = [
 	// Savings accounts
@@ -138,9 +152,22 @@ export const products: Product[] = [
 	// CIMB Thai Savings accounts
 	cimbChillD,
 	cimbSpeedDPlus,
+	cimbSpeedSavings,
+	cimbBasicBanking,
 	// CIMB Thai Fixed deposits (Fixed D, digital)
 	cimbFixedD3m,
 	cimbFixedD6m,
 	cimbFixedD9m,
 	cimbFixedD12m,
+	// CIMB Thai Fixed deposits (passbook)
+	cimbFixed3m,
+	cimbFixed6m,
+	cimbFixed12m,
+	cimbFixed24m,
+	cimbFixed36m,
+	// CIMB Thai Fixed deposits (special)
+	cimbSeniorFixed12m,
+	// CIMB Thai Long-term deposits (tax-free monthly savings)
+	cimbPhemkhaSabaiJai24m,
+	cimbPhemkhaSabaiJai36m,
 ];
