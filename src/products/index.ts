@@ -47,6 +47,16 @@ import {
 import { kbankESavings, kbankEPocket, kbankSavings } from "./kbank-savings.ts";
 import { kbankSuperSenior } from "./kbank-super-senior.ts";
 import { kbankTaweesup } from "./kbank-taweesup.ts";
+import {
+	uobFixed3m,
+	uobFixed6m,
+	uobFixed12m,
+	uobFixed24m,
+	uobFixed36m,
+} from "./uob-fixed-deposits.ts";
+import { uobOneAccount } from "./uob-one-account.ts";
+import { uobStash } from "./uob-stash.ts";
+import { uobTmrwSavings } from "./uob-tmrw-savings.ts";
 
 export const products: Product[] = [
 	// Savings accounts
@@ -107,4 +117,14 @@ export const products: Product[] = [
 	kbankFlexFamily,
 	kbankSuperSenior,
 	kbankTaweesup,
+	// UOB Savings accounts
+	uobTmrwSavings,
+	uobStash,
+	uobOneAccount,
+	// UOB Fixed deposits
+	uobFixed3m,
+	uobFixed6m,
+	uobFixed12m,
+	uobFixed24m,
+	uobFixed36m,
 ];
