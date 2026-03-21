@@ -19,14 +19,18 @@ Fetch official bank product pages, compare interest rates and conditions with th
 
 All products live in `src/products/*.ts` and are registered in `src/products/index.ts`. Each product has a `url` field linking to the official bank product page. The `metadata.notes` field often contains the effective date of the current rates (e.g. "อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569").
 
-### Bank URL Patterns
+### Bank Reference Files
 
-| Bank | Base URL |
-|------|----------|
-| KKP | `https://bank.kkpfg.com/th/personal-banking/deposit/` |
-| SCB | `https://www.scb.co.th/th/personal-banking/deposits/` |
-| Dime | `https://bank.kkpfg.com/th/dime/` |
-| Fin | `https://bank.kkpfg.com/th/fin/` |
+Each bank has a dedicated reference file with fetch URLs, extraction instructions, and fallback methods:
+
+| Bank | Reference File |
+|------|---------------|
+| KKP (incl. Dime, Fin) | [references/kkp.md](./references/kkp.md) |
+| SCB | [references/scb.md](./references/scb.md) |
+| KBank | [references/kbank.md](./references/kbank.md) |
+| UOB | [references/uob.md](./references/uob.md) |
+
+When validating a specific bank, read the corresponding reference file for detailed per-product fetch instructions.
 
 ## Procedure
 
@@ -42,15 +46,17 @@ This prints each product's `id`, `name`, `headlineRate`, `tiers`, `url`, and `me
 
 ### 2. Fetch Official Bank Pages
 
-Follow the [Product Fetching Guide](./references/fetching-guide.md) for detailed per-bank, per-product instructions on which URLs to fetch, how to extract rate data from each page, and what fallback methods to use when the primary fetch fails.
+Read the bank-specific reference file (see table above) for detailed per-product instructions on which URLs to fetch, how to extract rate data from each page, and what fallback methods to use when the primary fetch fails.
 
 **Summary of fetch strategy per bank:**
 
-1. **KKP products** — Each savings product has its own page. Fixed deposits share a single page with a term-based table. Use `fetch_webpage` on each product's `url` field.
-2. **SCB products** — Individual pages per savings product; shared page for fixed deposits. SCB pages are JS-heavy — if `fetch_webpage` returns empty, fall back to browser rendering (`open_browser_page` + `read_page`).
-3. **Dime / Fin** — Same structure as KKP savings pages.
+1. **KKP products** — Each savings product has its own page. Fixed deposits share a single page with a term-based table. Use `fetch_webpage` on each product's `url` field. See [references/kkp.md](./references/kkp.md).
+2. **SCB products** — Individual pages per savings product; shared page for fixed deposits. SCB pages are JS-heavy — if `fetch_webpage` returns empty, fall back to browser rendering. See [references/scb.md](./references/scb.md).
+3. **KBank products** — JS-heavy pages. Use browser rendering if `fetch_webpage` returns empty. See [references/kbank.md](./references/kbank.md).
+4. **UOB products** — Savings pages show rates inline. Fixed deposit rates require the official rate PDF. See [references/uob.md](./references/uob.md).
+5. **Dime / Fin** — Same structure as KKP savings pages. See [references/kkp.md](./references/kkp.md).
 
-**If a product page is unreachable**, the fetching guide includes 3-4 fallback methods per bank (rate PDFs, interest rate overview pages, Google search, BOT aggregate data).
+**If a product page is unreachable**, the bank reference files include 3-4 fallback methods per bank (rate PDFs, interest rate overview pages, Google search, BOT aggregate data).
 
 ### 3. Extract & Compare Rates
 

@@ -169,7 +169,68 @@ Example of the sections in `src/products/index.ts`:
 
 When adding a new bank, create a new clearly-commented section at the end.
 
-### 6. Build & Verify
+### 6. Update Validate-Products Reference
+
+The `validate-products` skill uses per-bank reference files to know how to fetch and verify rates. After adding a new product, update or create the bank's reference file.
+
+**Reference file location**: `.agents/skills/validate-products/references/{bank-prefix}.md`
+
+Existing reference files:
+- `kkp.md` — KKP, Dime, Fin products
+- `scb.md` — SCB products
+- `kbank.md` — KBank products
+- `uob.md` — UOB products
+
+#### If the bank already has a reference file
+
+Add the new product(s) to the appropriate section in the existing file:
+1. Add a row to the product table with the product ID and fetch URL
+2. If the product has a unique page structure, add extraction notes
+
+#### If this is a new bank
+
+Create a new reference file at `.agents/skills/validate-products/references/{bank-prefix}.md` using this template:
+
+```markdown
+# {Bank Full Name} ({ABBR})
+
+Base URL: `https://...`
+
+Brief note about the bank's page rendering (JS-heavy, server-rendered, etc.).
+
+## {Bank} Savings Accounts
+
+| Product ID | Fetch URL |
+|------------|-----------|
+| `{id}` | `{url}` |
+
+**How to extract**: Description of where rate data appears on the page.
+
+**What to look for**:
+- Rate table format
+- Effective date location
+- Special conditions section
+
+**Fallback methods**:
+1. Bank interest rate overview page
+2. Official rate PDF
+3. Search for "{bank} อัตราดอกเบี้ยเงินฝาก"
+
+## {Bank} Fixed Deposits
+
+| Product IDs | Fetch URL |
+|-------------|-----------|
+| `{id-3m}`, `{id-6m}`, ... | `{url}` |
+
+**How to extract**: Description of term-based rate table.
+
+**Fallback methods**:
+1. ...
+```
+
+Then register the new bank in `.agents/skills/validate-products/SKILL.md` by adding a row to the "Bank Reference Files" table.
+
+### 7. Build & Verify
 
 Run the following to ensure no type errors:
 
@@ -177,7 +238,7 @@ Run the following to ensure no type errors:
 bun run build
 ```
 
-### 7. Commit
+### 8. Commit
 
 Use the `commit-changes` skill. The commit should follow:
 - **Type**: `feat`
@@ -208,6 +269,8 @@ Use these established tags. Do not invent new tags without good reason.
 | Siam Commercial Bank | `Siam Commercial Bank (SCB)` | `scb-` |
 | Dime (by KKP) | `Kiatnakin Phatra (KKP)` | `dime-` |
 | Fin (by KKP) | `Kiatnakin Phatra (KKP)` | `fin-` |
+| Kasikornbank | `Kasikornbank (KBank)` | `kbank-` |
+| United Overseas Bank | `United Overseas Bank (UOB)` | `uob-` |
 
 When adding a new bank, pick a short lowercase prefix and use it consistently.
 
