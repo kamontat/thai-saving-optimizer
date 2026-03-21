@@ -92,8 +92,7 @@ export const tcbFixed12m: FixedDepositProduct = {
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ 12 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -113,8 +112,7 @@ export const tcbFixed18m: FixedDepositProduct = {
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ 18 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -134,8 +132,7 @@ export const tcbFixed24m: FixedDepositProduct = {
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ 24 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -155,7 +152,6 @@ export const tcbFixed36m: FixedDepositProduct = {
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ 36 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };

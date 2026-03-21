@@ -27,8 +27,7 @@ export const tcbHappySenior12m: FixedDepositProduct = {
 		officialName: "บัญชีฝากประจำแฮปปี ซีเนียร์",
 		productCategory: "เงินฝากประจำ",
 		interestCalculation: "คำนวณดอกเบี้ยตามอัตราคงที่ตลอดระยะเวลาฝาก",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด โอนเข้าบัญชีออมทรัพย์คู่โอน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด โอนเข้าบัญชีออมทรัพย์คู่โอน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };

@@ -44,7 +44,10 @@ export default function OptimizerPage() {
 					onExclude={(productId) =>
 						setFilter((prev) => ({
 							...prev,
-							excludedProductIds: new Set([...prev.excludedProductIds, productId]),
+							excludedProductIds: new Set([
+								...prev.excludedProductIds,
+								productId,
+							]),
 						}))
 					}
 				/>

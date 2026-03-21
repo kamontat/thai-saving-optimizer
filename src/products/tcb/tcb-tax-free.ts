@@ -16,8 +16,7 @@ const baseConditions = [
 
 const baseMetadata = {
 	productCategory: "เงินฝากปลอดภาษี",
-	interestCalculation:
-		"คำนวณดอกเบี้ยแบบไม่ทบต้น อัตราคงที่ตลอดระยะเวลาฝาก",
+	interestCalculation: "คำนวณดอกเบี้ยแบบไม่ทบต้น อัตราคงที่ตลอดระยะเวลาฝาก",
 	notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 };
 
@@ -33,12 +32,8 @@ export const tcbTaxFree24m: LongTermProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 2.0 }],
 	url: baseUrl,
 	tags: ["tax-free", "high-rate"],
-	description:
-		"เงินฝากปลอดภาษี 24 เดือน ฝากรายเดือน ดอกเบี้ย 2.00% ต่อปี ยกเว้นภาษี",
-	conditions: [
-		...baseConditions,
-		"จำนวนเงินฝากต่อเดือน 1,000 - 25,000 บาท",
-	],
+	description: "เงินฝากปลอดภาษี 24 เดือน ฝากรายเดือน ดอกเบี้ย 2.00% ต่อปี ยกเว้นภาษี",
+	conditions: [...baseConditions, "จำนวนเงินฝากต่อเดือน 1,000 - 25,000 บาท"],
 	metadata: {
 		...baseMetadata,
 		officialName: "บัญชีเงินฝากปลอดภาษี 24 เดือน",
@@ -58,12 +53,8 @@ export const tcbTaxFree36m: LongTermProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 2.1 }],
 	url: baseUrl,
 	tags: ["tax-free", "high-rate"],
-	description:
-		"เงินฝากปลอดภาษี 36 เดือน ฝากรายเดือน ดอกเบี้ย 2.10% ต่อปี ยกเว้นภาษี",
-	conditions: [
-		...baseConditions,
-		"จำนวนเงินฝากต่อเดือน 1,000 - 16,500 บาท",
-	],
+	description: "เงินฝากปลอดภาษี 36 เดือน ฝากรายเดือน ดอกเบี้ย 2.10% ต่อปี ยกเว้นภาษี",
+	conditions: [...baseConditions, "จำนวนเงินฝากต่อเดือน 1,000 - 16,500 บาท"],
 	metadata: {
 		...baseMetadata,
 		officialName: "บัญชีเงินฝากปลอดภาษี 36 เดือน",

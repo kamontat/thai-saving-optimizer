@@ -12,8 +12,7 @@ export const cimbSeniorFixed12m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.75 }],
 	url: "https://www.cimbthai.com/th/personal/products/accounts/fixed-deposit-accounts/senior-fixed-deposit.html",
 	tags: ["tax-free", "special-conditions"],
-	description:
-		"เงินฝากประจำซีเนียร์ สำหรับผู้สูงอายุ 55 ปีขึ้นไป ดอกเบี้ย 0.75% ต่อปี ปลอดภาษี",
+	description: "เงินฝากประจำซีเนียร์ สำหรับผู้สูงอายุ 55 ปีขึ้นไป ดอกเบี้ย 0.75% ต่อปี ปลอดภาษี",
 	conditions: [
 		"ไม่รับเปิดบัญชีใหม่ตั้งแต่วันที่ 1 มีนาคม 2569 เป็นต้นไป",
 		"สำหรับบุคคลธรรมดาอายุ 55 ปีบริบูรณ์ขึ้นไป มีถิ่นที่อยู่ในประเทศไทย",

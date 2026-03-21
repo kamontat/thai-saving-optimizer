@@ -14,13 +14,10 @@ export const kbankSavings: SavingsProduct = {
 	name: "KBank Savings",
 	bank: "Kasikorn Bank (KBank)",
 	headlineRate: 0.25,
-	tiers: [
-		{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.25 },
-	],
+	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.25 }],
 	url: "https://www.kasikornbank.com/th/personal/account/pages/savings.aspx",
 	tags: ["no-min-deposit"],
-	description:
-		"บัญชีเงินฝากออมทรัพย์กสิกรไทย ฝาก ถอน โอน ได้ทุกสาขา ดอกเบี้ย 0.25% ต่อปี",
+	description: "บัญชีเงินฝากออมทรัพย์กสิกรไทย ฝาก ถอน โอน ได้ทุกสาขา ดอกเบี้ย 0.25% ต่อปี",
 	conditions: [
 		"สำหรับบุคคลธรรมดา",
 		"เปิดบัญชีไม่มีขั้นต่ำ",
@@ -29,8 +26,7 @@ export const kbankSavings: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน",
+		interestCalculation: "คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน",
 		payoutFrequency: "ปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 6 ม.ค. 2569",
 	},

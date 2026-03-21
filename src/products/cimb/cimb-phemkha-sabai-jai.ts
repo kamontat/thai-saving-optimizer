@@ -30,8 +30,7 @@ export const cimbPhemkhaSabaiJai24m: LongTermProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 1.3 }],
 	url: baseUrl,
 	tags: ["tax-free", "special-conditions"],
-	description:
-		"เงินฝากเพิ่มค่าสบายใจ 24 เดือน ฝากรายเดือน ดอกเบี้ย 1.30% ต่อปี ปลอดภาษี",
+	description: "เงินฝากเพิ่มค่าสบายใจ 24 เดือน ฝากรายเดือน ดอกเบี้ย 1.30% ต่อปี ปลอดภาษี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
@@ -52,8 +51,7 @@ export const cimbPhemkhaSabaiJai36m: LongTermProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 1.3 }],
 	url: baseUrl,
 	tags: ["tax-free", "special-conditions"],
-	description:
-		"เงินฝากเพิ่มค่าสบายใจ 36 เดือน ฝากรายเดือน ดอกเบี้ย 1.30% ต่อปี ปลอดภาษี",
+	description: "เงินฝากเพิ่มค่าสบายใจ 36 เดือน ฝากรายเดือน ดอกเบี้ย 1.30% ต่อปี ปลอดภาษี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,

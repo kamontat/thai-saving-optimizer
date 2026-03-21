@@ -29,7 +29,11 @@ export default function AllocationResult({
 						<th className="py-2 pr-4 text-right">Amount</th>
 						<th className="py-2 pr-4 text-right">Annual Interest</th>
 						<th className="py-2 text-right">Effective Rate</th>
-						{onExclude && <th className="py-2 pl-4 w-8"><span className="sr-only">Actions</span></th>}
+						{onExclude && (
+							<th className="py-2 pl-4 w-8">
+								<span className="sr-only">Actions</span>
+							</th>
+						)}
 					</tr>
 				</thead>
 				<tbody>
@@ -69,9 +73,20 @@ export default function AllocationResult({
 										onClick={() => onExclude(a.product.id)}
 										className="text-gray-400 hover:text-red-500 transition-colors"
 									>
-										<svg className="w-4 h-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+										<svg
+											className="w-4 h-4 inline"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+											strokeWidth={2}
+											aria-hidden="true"
+										>
 											<title>Exclude</title>
-											<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+											<path
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												d="M6 18L18 6M6 6l12 12"
+											/>
 										</svg>
 									</button>
 								</td>

@@ -93,9 +93,7 @@ export const kbankFixed24m: FixedDepositProduct = {
 	bank: "Kasikorn Bank (KBank)",
 	headlineRate: 0.9,
 	minDeposit: 1_000,
-	tiers: [
-		{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.9 },
-	],
+	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.9 }],
 	url: baseUrl,
 	tags: [],
 	description: "เงินฝากประจำ KBank 24 เดือน ดอกเบี้ย 0.90% ต่อปี",
@@ -119,9 +117,7 @@ export const kbankFixed36m: FixedDepositProduct = {
 	bank: "Kasikorn Bank (KBank)",
 	headlineRate: 0.9,
 	minDeposit: 1_000,
-	tiers: [
-		{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.9 },
-	],
+	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.9 }],
 	url: baseUrl,
 	tags: [],
 	description: "เงินฝากประจำ KBank 36 เดือน ดอกเบี้ย 0.90% ต่อปี",

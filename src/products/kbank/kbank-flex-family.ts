@@ -12,9 +12,7 @@ export const kbankFlexFamily: FixedDepositProduct = {
 	headlineRate: 0.75,
 	minDeposit: 9_000,
 	maxDeposit: 1_000_000,
-	tiers: [
-		{ min: 9_000, max: 1_000_000, rate: 0.75 },
-	],
+	tiers: [{ min: 9_000, max: 1_000_000, rate: 0.75 }],
 	url: baseUrl,
 	tags: ["insurance", "special-conditions"],
 	description:

@@ -24,8 +24,7 @@ export const uobOneAccount: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีออมทรัพย์ UOB ONE ACCOUNT",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยจากยอดเงินฝากเฉลี่ยของเดือน แบบขั้นบันได",
+		interestCalculation: "คำนวณดอกเบี้ยจากยอดเงินฝากเฉลี่ยของเดือน แบบขั้นบันได",
 		payoutFrequency: "จ่ายดอกเบี้ยรายเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 1 มี.ค. 2569",
 	},

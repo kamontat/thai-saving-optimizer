@@ -12,9 +12,7 @@ export const kbankTaweesup: FixedDepositProduct = {
 	headlineRate: 1.75,
 	minDeposit: 500,
 	maxDeposit: 25_000,
-	tiers: [
-		{ min: 500, max: 25_000, rate: 1.75 },
-	],
+	tiers: [{ min: 500, max: 25_000, rate: 1.75 }],
 	url: baseUrl,
 	tags: ["high-rate", "tax-free", "special-conditions"],
 	description:

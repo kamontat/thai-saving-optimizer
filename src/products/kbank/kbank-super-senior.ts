@@ -12,9 +12,7 @@ export const kbankSuperSenior: FixedDepositProduct = {
 	headlineRate: 0.9,
 	minDeposit: 100_000,
 	maxDeposit: 3_000_000,
-	tiers: [
-		{ min: 100_000, max: 3_000_000, rate: 0.9 },
-	],
+	tiers: [{ min: 100_000, max: 3_000_000, rate: 0.9 }],
 	url: baseUrl,
 	tags: ["insurance", "special-conditions"],
 	description:

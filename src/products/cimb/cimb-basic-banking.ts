@@ -7,13 +7,10 @@ export const cimbBasicBanking: SavingsProduct = {
 	bank: "CIMB Thai (CIMBT)",
 	headlineRate: 0.25,
 	minDeposit: 0,
-	tiers: [
-		{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.25 },
-	],
+	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.25 }],
 	url: "https://www.cimbthai.com/th/personal/products/accounts/savings-account/basic-banking-account.html",
 	tags: ["no-min-deposit", "special-conditions"],
-	description:
-		"บัญชีเงินฝากพื้นฐาน สำหรับผู้ถือบัตรสวัสดิการแห่งรัฐ หรือบุคคลอายุ 65 ปีขึ้นไป",
+	description: "บัญชีเงินฝากพื้นฐาน สำหรับผู้ถือบัตรสวัสดิการแห่งรัฐ หรือบุคคลอายุ 65 ปีขึ้นไป",
 	conditions: [
 		"สำหรับผู้ถือบัตรสวัสดิการแห่งรัฐ หรือบุคคลธรรมดาอายุ 65 ปีบริบูรณ์ขึ้นไป",
 		"ประเภทสมุดคู่ฝาก",
@@ -25,10 +22,8 @@ export const cimbBasicBanking: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากพื้นฐาน",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
+		interestCalculation: "คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน",
+		payoutFrequency: "จ่ายดอกเบี้ยปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 11 มี.ค. 2569",
 	},
 };

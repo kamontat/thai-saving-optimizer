@@ -12,8 +12,7 @@ export const tcbSavings: SavingsProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.4 }],
 	url: savingsUrl,
 	tags: [],
-	description:
-		"บัญชีเงินฝากออมทรัพย์ทั่วไป คล่องตัวสูง ฝาก-ถอนได้ทุกวัน ไม่จำกัดจำนวนครั้ง",
+	description: "บัญชีเงินฝากออมทรัพย์ทั่วไป คล่องตัวสูง ฝาก-ถอนได้ทุกวัน ไม่จำกัดจำนวนครั้ง",
 	conditions: [
 		"เปิดบัญชีขั้นต่ำ 500 บาท",
 		"เปิดบัญชีได้ทั้งบุคคลธรรมดาและนิติบุคคล",
@@ -22,10 +21,8 @@ export const tcbSavings: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยจากยอดเงินคงเหลือทุกสิ้นวัน",
-		payoutFrequency:
-			"ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
+		interestCalculation: "คำนวณดอกเบี้ยจากยอดเงินคงเหลือทุกสิ้นวัน",
+		payoutFrequency: "ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };
@@ -50,10 +47,8 @@ export const tcbBasicBanking: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากพื้นฐาน (Basic Banking Account)",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยจากยอดเงินคงเหลือทุกสิ้นวัน",
-		payoutFrequency:
-			"ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
+		interestCalculation: "คำนวณดอกเบี้ยจากยอดเงินคงเหลือทุกสิ้นวัน",
+		payoutFrequency: "ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };
@@ -85,8 +80,7 @@ export const tcbPlusSpecial: SavingsProduct = {
 		productCategory: "เงินฝากออมทรัพย์",
 		interestCalculation:
 			"คำนวณดอกเบี้ยแบบทั้งจำนวนและก้าวหน้าจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
-		payoutFrequency:
-			"เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
+		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };
@@ -104,8 +98,7 @@ export const tcbTemKrapuk: SavingsProduct = {
 	],
 	url: savingsUrl,
 	tags: ["high-rate", "tiered"],
-	description:
-		"บัญชีออมทรัพย์เต็มกระปุก ดอกเบี้ยสูงสุด 1.30% สำหรับยอดไม่เกิน 500,000 บาท",
+	description: "บัญชีออมทรัพย์เต็มกระปุก ดอกเบี้ยสูงสุด 1.30% สำหรับยอดไม่เกิน 500,000 บาท",
 	conditions: [
 		"เปิดบัญชีขั้นต่ำ 5,000 บาท",
 		"สำหรับบุคคลธรรมดาเท่านั้น",
@@ -114,10 +107,8 @@ export const tcbTemKrapuk: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์เต็มกระปุก",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยแบบก้าวหน้าจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
-		payoutFrequency:
-			"เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
+		interestCalculation: "คำนวณดอกเบี้ยแบบก้าวหน้าจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
+		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };
@@ -146,10 +137,8 @@ export const tcbPlusAccountOne: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์ เพิ่มค่า Plus Account One",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยแบบทั้งจำนวนจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
-		payoutFrequency:
-			"เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
+		interestCalculation: "คำนวณดอกเบี้ยแบบทั้งจำนวนจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
+		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };
@@ -178,10 +167,8 @@ export const tcbPlusHi: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์ เพิ่มค่า Plus Hi",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยแบบก้าวหน้าจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
-		payoutFrequency:
-			"เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
+		interestCalculation: "คำนวณดอกเบี้ยแบบก้าวหน้าจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
+		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };
@@ -214,8 +201,7 @@ export const tcbBizPlus: SavingsProduct = {
 		productCategory: "เงินฝากออมทรัพย์",
 		interestCalculation:
 			"คำนวณดอกเบี้ยแบบทั้งจำนวนและก้าวหน้าจากยอดเงินฝากคงเหลือ ณ สิ้นวัน",
-		payoutFrequency:
-			"เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
+		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };
@@ -234,8 +220,7 @@ export const tcbBizDefined: SavingsProduct = {
 	],
 	url: savingsUrl,
 	tags: ["tiered", "special-conditions"],
-	description:
-		"บัญชีออมทรัพย์ Biz Defined สำหรับนิติบุคคลที่มีเงินฝากเฉลี่ยมากกว่า 50 ล้านบาท",
+	description: "บัญชีออมทรัพย์ Biz Defined สำหรับนิติบุคคลที่มีเงินฝากเฉลี่ยมากกว่า 50 ล้านบาท",
 	conditions: [
 		"เปิดบัญชีขั้นต่ำ 50,000,000 บาท",
 		"สำหรับนิติบุคคลทั่วไป กองทุน และบริษัทประกัน",
@@ -245,10 +230,8 @@ export const tcbBizDefined: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์ Biz Defined",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยจากยอดเงินฝากคงเหลือทุกสิ้นวัน",
-		payoutFrequency:
-			"ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
+		interestCalculation: "คำนวณดอกเบี้ยจากยอดเงินฝากคงเหลือทุกสิ้นวัน",
+		payoutFrequency: "ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
 };

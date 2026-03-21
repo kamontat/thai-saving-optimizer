@@ -21,7 +21,10 @@ export default function ProductListPage() {
 		return [...filtered].sort((a, b) => b.headlineRate - a.headlineRate);
 	}, [filter]);
 
-	const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
+	const totalPages = Math.max(
+		1,
+		Math.ceil(filteredProducts.length / PAGE_SIZE),
+	);
 	const safeePage = Math.min(page, totalPages - 1);
 	const pageProducts = filteredProducts.slice(
 		safeePage * PAGE_SIZE,
@@ -90,7 +93,8 @@ export default function ProductListPage() {
 				{/* Pagination */}
 				<div className="flex items-center justify-between border-t border-gray-200 px-4 py-3 text-sm">
 					<span className="text-gray-500">
-						{filteredProducts.length} product{filteredProducts.length !== 1 && "s"}
+						{filteredProducts.length} product
+						{filteredProducts.length !== 1 && "s"}
 					</span>
 					{totalPages > 1 && (
 						<div className="flex items-center gap-2">

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function formatWithCommas(value: string): string {
 	const digits = value.replace(/[^\d]/g, "");
@@ -30,10 +30,7 @@ export default function AmountInput({
 
 	return (
 		<div className="flex items-center gap-2">
-			<label
-				htmlFor={id}
-				className="text-sm font-medium text-gray-700"
-			>
+			<label htmlFor={id} className="text-sm font-medium text-gray-700">
 				{label}
 			</label>
 			<input

@@ -12,8 +12,7 @@ export const tcbFixedTunjai12m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 1.6 }],
 	url: "https://www.thaicreditbank.com/Page/46?lang=th",
 	tags: ["high-rate"],
-	description:
-		"เงินฝากประจำทันใจ 12 เดือน ดอกเบี้ย 1.60% รับดอกเบี้ยทันที ณ วันฝาก",
+	description: "เงินฝากประจำทันใจ 12 เดือน ดอกเบี้ย 1.60% รับดอกเบี้ยทันที ณ วันฝาก",
 	conditions: [
 		"สำหรับบุคคลธรรมดาเท่านั้น",
 		"เปิดบัญชีขั้นต่ำ 100,000 บาท สูงสุดต่อรายไม่เกิน 1,500,000 บาท",
@@ -24,8 +23,7 @@ export const tcbFixedTunjai12m: FixedDepositProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากประจำทันใจ",
 		productCategory: "เงินฝากประจำ",
-		interestCalculation:
-			"คำนวณดอกเบี้ยตามอัตราคงที่ จ่ายดอกเบี้ยทันที ณ วันฝาก",
+		interestCalculation: "คำนวณดอกเบี้ยตามอัตราคงที่ จ่ายดอกเบี้ยทันที ณ วันฝาก",
 		payoutFrequency: "จ่ายดอกเบี้ยทันที ณ วันฝาก (กรณีฝากด้วยเงินสด)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},

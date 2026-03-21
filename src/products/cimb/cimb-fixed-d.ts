@@ -29,8 +29,7 @@ export const cimbFixedD3m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.55 }],
 	url: baseUrl,
 	tags: ["digital"],
-	description:
-		"เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 3 เดือน ดอกเบี้ย 0.55% ต่อปี",
+	description: "เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 3 เดือน ดอกเบี้ย 0.55% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
@@ -50,14 +49,12 @@ export const cimbFixedD6m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.6 }],
 	url: baseUrl,
 	tags: ["digital"],
-	description:
-		"เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 6 เดือน ดอกเบี้ย 0.60% ต่อปี",
+	description: "เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 6 เดือน ดอกเบี้ย 0.60% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำดิจิทัล Fixed D 6 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -72,14 +69,12 @@ export const cimbFixedD9m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.6 }],
 	url: baseUrl,
 	tags: ["digital"],
-	description:
-		"เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 9 เดือน ดอกเบี้ย 0.60% ต่อปี",
+	description: "เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 9 เดือน ดอกเบี้ย 0.60% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำดิจิทัล Fixed D 9 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -94,13 +89,11 @@ export const cimbFixedD12m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.75 }],
 	url: baseUrl,
 	tags: ["digital"],
-	description:
-		"เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 12 เดือน ดอกเบี้ย 0.75% ต่อปี",
+	description: "เงินฝากประจำดิจิทัล Fixed D ซีไอเอ็มบี ไทย 12 เดือน ดอกเบี้ย 0.75% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำดิจิทัล Fixed D 12 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };

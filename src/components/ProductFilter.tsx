@@ -26,8 +26,7 @@ export function applyFilter(
 		(p) =>
 			filter.types.has(p.type) &&
 			filter.banks.has(p.bank) &&
-			(filter.tags.size === 0 ||
-				p.tags.some((tag) => filter.tags.has(tag))) &&
+			(filter.tags.size === 0 || p.tags.some((tag) => filter.tags.has(tag))) &&
 			!filter.excludedProductIds.has(p.id),
 	);
 }
@@ -98,7 +97,9 @@ function FilterSection({
 				</div>
 				<ChevronIcon open={open} />
 			</button>
-			{open && <div className="px-4 py-3 border-t border-gray-200">{children}</div>}
+			{open && (
+				<div className="px-4 py-3 border-t border-gray-200">{children}</div>
+			)}
 		</div>
 	);
 }
@@ -154,8 +155,7 @@ export default function ProductFilter({
 		const q = productSearch.toLowerCase();
 		return visibleProducts.filter(
 			(p) =>
-				p.name.toLowerCase().includes(q) ||
-				p.bank.toLowerCase().includes(q),
+				p.name.toLowerCase().includes(q) || p.bank.toLowerCase().includes(q),
 		);
 	}, [visibleProducts, productSearch]);
 
@@ -302,89 +302,95 @@ export default function ProductFilter({
 					)}
 
 					{/* Individual product toggles */}
-					{showProductSelector && <FilterSection
-						title="Products"
-						count={visibleProducts.length - filter.excludedProductIds.size}
-						total={visibleProducts.length}
-					>
-						<div className="relative mb-2">
-							<input
-								type="text"
-								value={productSearch}
-								onChange={(e) => setProductSearch(e.target.value)}
-								placeholder="Search products…"
-								className="w-full text-sm pl-8 pr-3 py-1.5 border border-gray-200 rounded-md bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-							/>
-							<svg
-								className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-								strokeWidth={2}
-								aria-hidden="true"
-							>
-								<title>Search</title>
-								<path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-							</svg>
-						</div>
-						<div className="flex items-center justify-end gap-3 mb-2">
-							<button
-								type="button"
-								onClick={() =>
-									onChange({ ...filter, excludedProductIds: new Set() })
-								}
-								className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
-							>
-								Select All
-							</button>
-							<button
-								type="button"
-								onClick={() =>
-									onChange({
-										...filter,
-										excludedProductIds: new Set(products.map((p) => p.id)),
-									})
-								}
-								className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
-							>
-								Deselect All
-							</button>
-						</div>
-						<div className="max-h-48 overflow-y-auto rounded-md border border-gray-100 bg-gray-50/50 divide-y divide-gray-100">
-							{filteredProducts.map((p) => (
-								<label
-									key={p.id}
-									className="flex items-center gap-2 text-sm cursor-pointer hover:bg-blue-50/50 px-3 py-1.5 transition-colors"
+					{showProductSelector && (
+						<FilterSection
+							title="Products"
+							count={visibleProducts.length - filter.excludedProductIds.size}
+							total={visibleProducts.length}
+						>
+							<div className="relative mb-2">
+								<input
+									type="text"
+									value={productSearch}
+									onChange={(e) => setProductSearch(e.target.value)}
+									placeholder="Search products…"
+									className="w-full text-sm pl-8 pr-3 py-1.5 border border-gray-200 rounded-md bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+								/>
+								<svg
+									className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									strokeWidth={2}
+									aria-hidden="true"
 								>
-									<input
-										type="checkbox"
-										checked={!filter.excludedProductIds.has(p.id)}
-										onChange={() =>
-											onChange({
-												...filter,
-												excludedProductIds: toggleInSet(
-													filter.excludedProductIds,
-													p.id,
-												),
-											})
-										}
-										className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+									<title>Search</title>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
 									/>
-									<span className="truncate">{p.name}</span>
-									<span className="text-xs text-gray-400 ml-auto shrink-0 font-mono">
-										{p.headlineRate}%
-									</span>
-								</label>
-							))}
-							{filteredProducts.length === 0 && (
-								<p className="text-xs text-gray-400 text-center py-4">
-									{productSearch.trim()
-										? "No products match your search."
-										: "No products match the current type/bank filters."}
-								</p>
-							)}
-						</div>
-					</FilterSection>}
+								</svg>
+							</div>
+							<div className="flex items-center justify-end gap-3 mb-2">
+								<button
+									type="button"
+									onClick={() =>
+										onChange({ ...filter, excludedProductIds: new Set() })
+									}
+									className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+								>
+									Select All
+								</button>
+								<button
+									type="button"
+									onClick={() =>
+										onChange({
+											...filter,
+											excludedProductIds: new Set(products.map((p) => p.id)),
+										})
+									}
+									className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+								>
+									Deselect All
+								</button>
+							</div>
+							<div className="max-h-48 overflow-y-auto rounded-md border border-gray-100 bg-gray-50/50 divide-y divide-gray-100">
+								{filteredProducts.map((p) => (
+									<label
+										key={p.id}
+										className="flex items-center gap-2 text-sm cursor-pointer hover:bg-blue-50/50 px-3 py-1.5 transition-colors"
+									>
+										<input
+											type="checkbox"
+											checked={!filter.excludedProductIds.has(p.id)}
+											onChange={() =>
+												onChange({
+													...filter,
+													excludedProductIds: toggleInSet(
+														filter.excludedProductIds,
+														p.id,
+													),
+												})
+											}
+											className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+										/>
+										<span className="truncate">{p.name}</span>
+										<span className="text-xs text-gray-400 ml-auto shrink-0 font-mono">
+											{p.headlineRate}%
+										</span>
+									</label>
+								))}
+								{filteredProducts.length === 0 && (
+									<p className="text-xs text-gray-400 text-center py-4">
+										{productSearch.trim()
+											? "No products match your search."
+											: "No products match the current type/bank filters."}
+									</p>
+								)}
+							</div>
+						</FilterSection>
+					)}
 				</div>
 			)}
 		</div>

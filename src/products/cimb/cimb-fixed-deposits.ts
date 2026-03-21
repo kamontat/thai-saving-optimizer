@@ -27,8 +27,7 @@ export const cimbFixed3m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.55 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"เงินฝากประจำประเภทสมุดคู่ฝาก 3 เดือน ดอกเบี้ย 0.55% ต่อปี",
+	description: "เงินฝากประจำประเภทสมุดคู่ฝาก 3 เดือน ดอกเบี้ย 0.55% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
@@ -48,14 +47,12 @@ export const cimbFixed6m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.6 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"เงินฝากประจำประเภทสมุดคู่ฝาก 6 เดือน ดอกเบี้ย 0.60% ต่อปี",
+	description: "เงินฝากประจำประเภทสมุดคู่ฝาก 6 เดือน ดอกเบี้ย 0.60% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 6 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -70,14 +67,12 @@ export const cimbFixed12m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.75 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"เงินฝากประจำประเภทสมุดคู่ฝาก 12 เดือน ดอกเบี้ย 0.75% ต่อปี",
+	description: "เงินฝากประจำประเภทสมุดคู่ฝาก 12 เดือน ดอกเบี้ย 0.75% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 12 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -92,14 +87,12 @@ export const cimbFixed24m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.75 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"เงินฝากประจำประเภทสมุดคู่ฝาก 24 เดือน ดอกเบี้ย 0.75% ต่อปี",
+	description: "เงินฝากประจำประเภทสมุดคู่ฝาก 24 เดือน ดอกเบี้ย 0.75% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 24 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };
 
@@ -114,13 +107,11 @@ export const cimbFixed36m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.75 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"เงินฝากประจำประเภทสมุดคู่ฝาก 36 เดือน ดอกเบี้ย 0.75% ต่อปี",
+	description: "เงินฝากประจำประเภทสมุดคู่ฝาก 36 เดือน ดอกเบี้ย 0.75% ต่อปี",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 36 เดือน",
-		payoutFrequency:
-			"จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
+		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
 };

@@ -1,4 +1,41 @@
 import type { Product } from "../models/types.ts";
+import { cimbBasicBanking } from "./cimb/cimb-basic-banking.ts";
+import { cimbChillD } from "./cimb/cimb-chill-d.ts";
+import {
+	cimbFixedD3m,
+	cimbFixedD6m,
+	cimbFixedD9m,
+	cimbFixedD12m,
+} from "./cimb/cimb-fixed-d.ts";
+import {
+	cimbFixed3m,
+	cimbFixed6m,
+	cimbFixed12m,
+	cimbFixed24m,
+	cimbFixed36m,
+} from "./cimb/cimb-fixed-deposits.ts";
+import {
+	cimbPhemkhaSabaiJai24m,
+	cimbPhemkhaSabaiJai36m,
+} from "./cimb/cimb-phemkha-sabai-jai.ts";
+import { cimbSeniorFixed12m } from "./cimb/cimb-senior-fixed.ts";
+import { cimbSpeedDPlus } from "./cimb/cimb-speed-d-plus.ts";
+import { cimbSpeedSavings } from "./cimb/cimb-speed-savings.ts";
+import {
+	kbankFixed3m,
+	kbankFixed6m,
+	kbankFixed12m,
+	kbankFixed24m,
+	kbankFixed36m,
+} from "./kbank/kbank-fixed-deposits.ts";
+import { kbankFlexFamily } from "./kbank/kbank-flex-family.ts";
+import {
+	kbankEPocket,
+	kbankESavings,
+	kbankSavings,
+} from "./kbank/kbank-savings.ts";
+import { kbankSuperSenior } from "./kbank/kbank-super-senior.ts";
+import { kbankTaweesup } from "./kbank/kbank-taweesup.ts";
 import { dimeSave } from "./kkp/dime-save.ts";
 import { finSave } from "./kkp/fin-save.ts";
 import { kkpCurrentPlus } from "./kkp/kkp-current-plus.ts";
@@ -35,18 +72,29 @@ import {
 	scbFixed36m,
 } from "./scb/scb-fixed-deposits.ts";
 import { scbBonus24m, scbBonus36m } from "./scb/scb-long-term.ts";
-import { scbSavings, scbEasySavings, scbJadTem } from "./scb/scb-savings.ts";
-import { kbankFlexFamily } from "./kbank/kbank-flex-family.ts";
+import { scbEasySavings, scbJadTem, scbSavings } from "./scb/scb-savings.ts";
 import {
-	kbankFixed3m,
-	kbankFixed6m,
-	kbankFixed12m,
-	kbankFixed24m,
-	kbankFixed36m,
-} from "./kbank/kbank-fixed-deposits.ts";
-import { kbankESavings, kbankEPocket, kbankSavings } from "./kbank/kbank-savings.ts";
-import { kbankSuperSenior } from "./kbank/kbank-super-senior.ts";
-import { kbankTaweesup } from "./kbank/kbank-taweesup.ts";
+	tcbFixed6m,
+	tcbFixed8m,
+	tcbFixed9m,
+	tcbFixed12m,
+	tcbFixed18m,
+	tcbFixed24m,
+	tcbFixed36m,
+} from "./tcb/tcb-fixed-deposits.ts";
+import { tcbHappySenior12m } from "./tcb/tcb-fixed-happy-senior.ts";
+import { tcbFixedTunjai12m } from "./tcb/tcb-fixed-tunjai.ts";
+import {
+	tcbBasicBanking,
+	tcbBizDefined,
+	tcbBizPlus,
+	tcbPlusAccountOne,
+	tcbPlusHi,
+	tcbPlusSpecial,
+	tcbSavings,
+	tcbTemKrapuk,
+} from "./tcb/tcb-savings.ts";
+import { tcbTaxFree24m, tcbTaxFree36m } from "./tcb/tcb-tax-free.ts";
 import {
 	uobFixed3m,
 	uobFixed6m,
@@ -57,50 +105,6 @@ import {
 import { uobOneAccount } from "./uob/uob-one-account.ts";
 import { uobStash } from "./uob/uob-stash.ts";
 import { uobTmrwSavings } from "./uob/uob-tmrw-savings.ts";
-import { cimbChillD } from "./cimb/cimb-chill-d.ts";
-import { cimbSpeedDPlus } from "./cimb/cimb-speed-d-plus.ts";
-import { cimbSpeedSavings } from "./cimb/cimb-speed-savings.ts";
-import { cimbBasicBanking } from "./cimb/cimb-basic-banking.ts";
-import {
-	cimbFixedD3m,
-	cimbFixedD6m,
-	cimbFixedD9m,
-	cimbFixedD12m,
-} from "./cimb/cimb-fixed-d.ts";
-import {
-	cimbFixed3m,
-	cimbFixed6m,
-	cimbFixed12m,
-	cimbFixed24m,
-	cimbFixed36m,
-} from "./cimb/cimb-fixed-deposits.ts";
-import { cimbSeniorFixed12m } from "./cimb/cimb-senior-fixed.ts";
-import {
-	cimbPhemkhaSabaiJai24m,
-	cimbPhemkhaSabaiJai36m,
-} from "./cimb/cimb-phemkha-sabai-jai.ts";
-import {
-	tcbSavings,
-	tcbBasicBanking,
-	tcbPlusAccountOne,
-	tcbPlusHi,
-	tcbPlusSpecial,
-	tcbTemKrapuk,
-	tcbBizPlus,
-	tcbBizDefined,
-} from "./tcb/tcb-savings.ts";
-import {
-	tcbFixed6m,
-	tcbFixed8m,
-	tcbFixed9m,
-	tcbFixed12m,
-	tcbFixed18m,
-	tcbFixed24m,
-	tcbFixed36m,
-} from "./tcb/tcb-fixed-deposits.ts";
-import { tcbFixedTunjai12m } from "./tcb/tcb-fixed-tunjai.ts";
-import { tcbHappySenior12m } from "./tcb/tcb-fixed-happy-senior.ts";
-import { tcbTaxFree24m, tcbTaxFree36m } from "./tcb/tcb-tax-free.ts";
 
 export const products: Product[] = [
 	// Savings accounts
