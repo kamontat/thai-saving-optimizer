@@ -57,6 +57,14 @@ import {
 import { uobOneAccount } from "./uob-one-account.ts";
 import { uobStash } from "./uob-stash.ts";
 import { uobTmrwSavings } from "./uob-tmrw-savings.ts";
+import { cimbChillD } from "./cimb-chill-d.ts";
+import { cimbSpeedDPlus } from "./cimb-speed-d-plus.ts";
+import {
+	cimbFixedD3m,
+	cimbFixedD6m,
+	cimbFixedD9m,
+	cimbFixedD12m,
+} from "./cimb-fixed-d.ts";
 
 export const products: Product[] = [
 	// Savings accounts
@@ -127,4 +135,12 @@ export const products: Product[] = [
 	uobFixed12m,
 	uobFixed24m,
 	uobFixed36m,
+	// CIMB Thai Savings accounts
+	cimbChillD,
+	cimbSpeedDPlus,
+	// CIMB Thai Fixed deposits (Fixed D, digital)
+	cimbFixedD3m,
+	cimbFixedD6m,
+	cimbFixedD9m,
+	cimbFixedD12m,
 ];
