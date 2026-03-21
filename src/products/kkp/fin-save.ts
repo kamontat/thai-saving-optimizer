@@ -1,4 +1,4 @@
-import type { SavingsProduct } from "../models/types.ts";
+import type { SavingsProduct } from "../../models/types.ts";
 
 export const finSave: SavingsProduct = {
 	id: "fin-save",

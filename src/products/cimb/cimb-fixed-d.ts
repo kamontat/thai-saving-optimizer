@@ -1,4 +1,4 @@
-import type { FixedDepositProduct } from "../models/types.ts";
+import type { FixedDepositProduct } from "../../models/types.ts";
 
 const baseUrl =
 	"https://www.cimbthai.com/th/personal/products/accounts/fixed-deposit-accounts/cimb-thai-e-fixed-deposit.html";

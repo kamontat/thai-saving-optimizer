@@ -1,4 +1,4 @@
-import type { FixedDepositProduct } from "../models/types.ts";
+import type { FixedDepositProduct } from "../../models/types.ts";
 
 const baseUrl =
 	"https://bank.kkpfg.com/th/personal-banking/deposit/fixed-deposit/kkp-tax-free";

@@ -1,4 +1,4 @@
-import type { FixedDepositProduct } from "../models/types.ts";
+import type { FixedDepositProduct } from "../../models/types.ts";
 
 const baseUrl =
 	"https://www.uob.co.th/personal/deposits/fixed/fixed-deposit-normal-fixed.page";
