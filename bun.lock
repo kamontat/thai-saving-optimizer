@@ -13,7 +13,7 @@
       "devDependencies": {
         "@biomejs/biome": "2.4.8",
         "@kcconfigs/biome": "1.0.0-beta.1",
-        "@kcconfigs/tsconfig": "0.1.1",
+        "@kcconfigs/tsconfig": "1.0.0-beta.1",
         "@types/bun": "latest",
         "@types/d3": "7.4.3",
         "@types/react": "19.2.14",
@@ -43,7 +43,7 @@
 
     "@kcconfigs/biome": ["@kcconfigs/biome@1.0.0-beta.1", "", { "peerDependencies": { "@biomejs/biome": "^2.0.0" } }, "sha512-ExUmKATnp5aLdrdAOmTCZHClLwdPZe5y1gB7oizKZErFfcQ75spUZ6MzjygaXAQUjyxqzFuKWe8I74uQxMlRmg=="],
 
-    "@kcconfigs/tsconfig": ["@kcconfigs/tsconfig@0.1.1", "", { "dependencies": { "@types/node": "^24.0.0" }, "peerDependencies": { "typescript": "^5.5.0" } }, "sha512-QLrrxWadXGgGrn8FNCVAXLyrV1dA8lma31YRCLyr/qKG+zaJjrRQ38pcHngPcADpy1NiGTDIlu1uFaA78sSrnQ=="],
+    "@kcconfigs/tsconfig": ["@kcconfigs/tsconfig@1.0.0-beta.1", "", { "dependencies": { "@types/node": "^24.0.0" }, "peerDependencies": { "typescript": "^5.5.0" } }, "sha512-ZZAckCTRakWlLSAWebwh/KWz9Qp1ayG3ZNOwEP9uYaU4Cq2vz8RwATs3AzLzRi8vygadQEQ+fWoR6G7FKpts3A=="],
 
     "@oven/bun-darwin-aarch64": ["@oven/bun-darwin-aarch64@1.3.10", "", { "os": "darwin", "cpu": "arm64" }, "sha512-PXgg5gqcS/rHwa1hF0JdM1y5TiyejVrMHoBmWY/DjtfYZoFTXie1RCFOkoG0b5diOOmUcuYarMpH7CSNTqwj+w=="],
 
