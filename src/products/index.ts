@@ -105,6 +105,38 @@ import {
 import { uobOneAccount } from "./uob/uob-one-account.ts";
 import { uobStash } from "./uob/uob-stash.ts";
 import { uobTmrwSavings } from "./uob/uob-tmrw-savings.ts";
+import { ttbDreamSavings } from "./ttb/ttb-dream-savings.ts";
+import { ttbExclusive9m } from "./ttb/ttb-exclusive.ts";
+import {
+	ttbFixed3m,
+	ttbFixed6m,
+	ttbFixed12m,
+	ttbFixed24m,
+	ttbFixed36m,
+} from "./ttb/ttb-fixed-deposits.ts";
+import { ttbMeSave } from "./ttb/ttb-me-save.ts";
+import { ttbNoFixed } from "./ttb/ttb-no-fixed.ts";
+import {
+	ttbQuickInterest3m,
+	ttbQuickInterest12m,
+} from "./ttb/ttb-quick-interest.ts";
+import {
+	ttbAllFree,
+	ttbBasic,
+	ttbPuentarn,
+} from "./ttb/ttb-savings.ts";
+import { ttbSavingsCare } from "./ttb/ttb-savings-care.ts";
+import {
+	ttbFixedPlus4m,
+	ttbFixedPlus7m,
+	ttbFixedPlus12m,
+	ttbFixedPlus18m,
+} from "./ttb/ttb-term-deposit-plus.ts";
+import { ttbTheExclusiveSavings } from "./ttb/ttb-the-exclusive-savings.ts";
+import {
+	ttbUpAndUp12m,
+	ttbUpAndUp24m,
+} from "./ttb/ttb-up-and-up.ts";
 
 export const products: Product[] = [
 	// Savings accounts
@@ -219,4 +251,31 @@ export const products: Product[] = [
 	// Thai Credit Bank Long-term deposits (tax-free)
 	tcbTaxFree24m,
 	tcbTaxFree36m,
+	// TMBThanachart Bank (ttb) Savings accounts
+	ttbNoFixed,
+	ttbMeSave,
+	ttbDreamSavings,
+	ttbSavingsCare,
+	ttbTheExclusiveSavings,
+	ttbAllFree,
+	ttbBasic,
+	ttbPuentarn,
+	// TMBThanachart Bank (ttb) Fixed deposits
+	ttbFixed3m,
+	ttbFixed6m,
+	ttbFixed12m,
+	ttbFixed24m,
+	ttbFixed36m,
+	// TMBThanachart Bank (ttb) Fixed deposits (Up & Up, step-up)
+	ttbUpAndUp12m,
+	ttbUpAndUp24m,
+	// TMBThanachart Bank (ttb) Fixed deposits (special)
+	ttbQuickInterest3m,
+	ttbQuickInterest12m,
+	ttbExclusive9m,
+	// TMBThanachart Bank (ttb) Fixed deposits (Plus, monthly interest)
+	ttbFixedPlus4m,
+	ttbFixedPlus7m,
+	ttbFixedPlus12m,
+	ttbFixedPlus18m,
 ];

@@ -181,6 +181,8 @@ Existing reference files:
 - `kbank.md` — KBank products
 - `uob.md` — UOB products
 - `cimb.md` — CIMB Thai products
+- `tcb.md` — Thai Credit Bank products
+- `ttb.md` — TMBThanachart Bank products
 
 #### If the bank already has a reference file
 
@@ -274,6 +276,7 @@ Use these established tags. Do not invent new tags without good reason.
 | United Overseas Bank | `United Overseas Bank (UOB)` | `uob-` |
 | CIMB Thai | `CIMB Thai (CIMBT)` | `cimb-` |
 | Thai Credit Bank | `Thai Credit Bank (TCB)` | `tcb-` |
+| TMBThanachart Bank | `TMBThanachart Bank (ttb)` | `ttb-` |
 
 When adding a new bank, pick a short lowercase prefix and use it consistently.
 
