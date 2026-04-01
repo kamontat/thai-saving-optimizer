@@ -10,3 +10,11 @@ export function formatCurrency(amount: number): string {
 export function formatPercent(percent: number): string {
 	return `${percent.toFixed(2)}%`;
 }
+
+export function formatDate(date: Date): string {
+	if (date instanceof Date) {
+		return date.toISOString().slice(0, 10);
+	}
+	// Fallback: bundler may serialize Date as string
+	return String(date);
+}
