@@ -1,11 +1,12 @@
 import { join } from "node:path";
+import { build as _build } from "bun";
 import tailwind from "bun-plugin-tailwind";
 
 async function build() {
 	const cwd = process.cwd();
 	const plugins = [tailwind];
 
-	return Bun.build({
+	return _build({
 		entrypoints: [join(cwd, "public/index.html")],
 		target: "browser",
 		outdir: join(cwd, "dist"),
