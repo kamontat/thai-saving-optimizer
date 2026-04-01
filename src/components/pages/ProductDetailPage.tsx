@@ -195,6 +195,11 @@ export default function ProductDetailPage({ id }: { id: string }) {
 				</div>
 			)}
 
+			{/* Last updated */}
+			<p className="text-xs text-gray-400">
+				Data last updated: {product.updatedAt}
+			</p>
+
 			{/* Try-it calculator */}
 			<div className="bg-white rounded-lg shadow p-6">
 				<h2 className="text-lg font-semibold text-gray-900 mb-3">

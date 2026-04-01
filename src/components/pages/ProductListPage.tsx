@@ -58,6 +58,7 @@ export default function ProductListPage() {
 							<th className="py-3 px-4">Bank</th>
 							<th className="py-3 px-4 text-right">Headline Rate</th>
 							<th className="py-3 px-4">Type</th>
+							<th className="py-3 px-4 text-right">Updated</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -79,11 +80,14 @@ export default function ProductListPage() {
 								<td className="py-3 px-4">
 									<ProductTypeBadge type={product.type} />
 								</td>
+								<td className="py-3 px-4 text-right text-gray-400 text-xs">
+									{product.updatedAt}
+								</td>
 							</tr>
 						))}
 						{pageProducts.length === 0 && (
 							<tr>
-								<td colSpan={4} className="py-8 text-center text-gray-400">
+								<td colSpan={5} className="py-8 text-center text-gray-400">
 									No products match the current filters.
 								</td>
 							</tr>
