@@ -89,6 +89,7 @@ export const variableName: SavingsProduct = {
 		payoutFrequency: "Thai-language payout schedule",
 		notes: "อัตราดอกเบี้ยมีผล ณ {effective date}",
 	},
+	updatedAt: "{YYYY-MM-DD of today}",
 };
 ```
 
@@ -129,6 +130,7 @@ export const bankFixed3m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "{YYYY-MM-DD of today}",
 };
 ```
 

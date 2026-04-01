@@ -105,6 +105,7 @@ For each product marked **CHANGED**:
    - `minDeposit` / `maxDeposit` — If changed
    - `conditions` — Updated Thai-language conditions
    - `metadata.notes` — Update the effective date
+   - `updatedAt` — Set to today's date in `YYYY-MM-DD` format (must be updated on every data refresh)
 3. Ensure `headlineRate` matches the highest tier rate (for savings products) or the primary rate (for fixed deposits)
 4. Verify tier boundaries are contiguous: each tier's `min` equals the previous tier's `max`
 
