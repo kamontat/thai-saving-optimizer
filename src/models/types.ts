@@ -1,35 +1,27 @@
+import type { BankName, MetadataKey, TagId } from "../constants/index.ts";
+
 export interface Tier {
 	min: number;
 	max: number;
 	rate: number;
 }
 
-export interface ProductMetadata {
-	logo?: string;
-	color?: string;
-	officialName: string;
-	productCategory: string;
-	interestCalculation: string;
-	payoutFrequency: string;
-	insuranceNote?: string;
-	promotionEnd?: string;
-	notes?: string;
-}
+export type ProductMetadata = Partial<Record<MetadataKey, string>>;
 
 export interface BaseProduct {
 	id: string;
 	name: string;
-	bank: string;
+	bank: BankName;
 	headlineRate: number;
 	tiers: Tier[];
 	minDeposit?: number;
 	maxDeposit?: number;
 	url: string;
 	description: string;
-	tags: string[];
+	tags: TagId[];
 	conditions?: string[];
 	metadata: ProductMetadata;
-	updatedAt: string;
+	updatedAt: Date;
 }
 
 export interface SavingsProduct extends BaseProduct {
