@@ -29,6 +29,7 @@ export interface BaseProduct {
 	tags: string[];
 	conditions?: string[];
 	metadata: ProductMetadata;
+	updatedAt: string;
 }
 
 export interface SavingsProduct extends BaseProduct {
