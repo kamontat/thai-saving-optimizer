@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { cms } from "../constants/index.ts";
 
 function formatWithCommas(value: string): string {
 	const digits = value.replace(/[^\d]/g, "");
@@ -9,7 +10,7 @@ export default function AmountInput({
 	value,
 	onChange,
 	id = "amount-input",
-	label = "Amount (THB):",
+	label = cms.amountInput.defaultLabel,
 }: {
 	value: number | null;
 	onChange: (value: number | null) => void;
@@ -37,7 +38,7 @@ export default function AmountInput({
 				id={id}
 				type="text"
 				inputMode="numeric"
-				placeholder="e.g. 100,000"
+				placeholder={cms.amountInput.placeholder}
 				value={display}
 				onChange={(e) => {
 					const raw = e.target.value.replace(/[^\d,]/g, "");

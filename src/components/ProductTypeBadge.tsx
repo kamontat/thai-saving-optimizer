@@ -1,26 +1,17 @@
-export default function ProductTypeBadge({
-	type,
-}: {
-	type: "savings" | "fixed-deposit" | "long-term";
-}) {
-	const label =
-		type === "savings"
-			? "Savings"
-			: type === "fixed-deposit"
-				? "Fixed Deposit"
-				: "Long-term";
-	const className =
-		type === "savings"
-			? "bg-green-100 text-green-800"
-			: type === "fixed-deposit"
-				? "bg-blue-100 text-blue-800"
-				: "bg-purple-100 text-purple-800";
+import { PRODUCT_TYPES, type ProductType } from "../constants/index.ts";
 
+const TYPE_COLORS: Record<ProductType, string> = {
+	savings: "bg-green-100 text-green-800",
+	"fixed-deposit": "bg-blue-100 text-blue-800",
+	"long-term": "bg-purple-100 text-purple-800",
+};
+
+export default function ProductTypeBadge({ type }: { type: ProductType }) {
 	return (
 		<span
-			className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${className}`}
+			className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${TYPE_COLORS[type]}`}
 		>
-			{label}
+			{PRODUCT_TYPES[type]}
 		</span>
 	);
 }

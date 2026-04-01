@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { cms, PRODUCT_TYPES } from "../constants/index.ts";
 import type { Product } from "../models/types.ts";
 
 export interface ProductFilterState {
@@ -41,11 +42,7 @@ function toggleInSet<T>(set: Set<T>, value: T): Set<T> {
 	return next;
 }
 
-const TYPE_LABELS: Record<Product["type"], string> = {
-	savings: "Savings",
-	"fixed-deposit": "Fixed Deposit",
-	"long-term": "Long-term",
-};
+const TYPE_LABELS = PRODUCT_TYPES;
 
 function ChevronIcon({ open }: { open: boolean }) {
 	return (
@@ -189,10 +186,12 @@ export default function ProductFilter({
 							d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
 						/>
 					</svg>
-					<span className="text-sm font-semibold text-gray-700">Filters</span>
+					<span className="text-sm font-semibold text-gray-700">
+						{cms.filter.title}
+					</span>
 					{activeFilterCount > 0 && (
 						<span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-600 text-white">
-							{activeFilterCount} active
+							{activeFilterCount} {cms.filter.active}
 						</span>
 					)}
 				</div>
@@ -204,7 +203,7 @@ export default function ProductFilter({
 				<div className="space-y-2">
 					{/* Type filter */}
 					<FilterSection
-						title="Product Type"
+						title={cms.filter.productType}
 						count={filter.types.size}
 						total={allTypes.length}
 						defaultOpen
@@ -234,7 +233,7 @@ export default function ProductFilter({
 
 					{/* Bank filter */}
 					<FilterSection
-						title="Bank"
+						title={cms.filter.bank}
 						count={filter.banks.size}
 						total={allBanks.length}
 					>
@@ -264,7 +263,7 @@ export default function ProductFilter({
 					{/* Tag filter */}
 					{allTags.length > 0 && (
 						<FilterSection
-							title="Tags"
+							title={cms.filter.tags}
 							count={filter.tags.size > 0 ? filter.tags.size : undefined}
 							total={filter.tags.size > 0 ? allTags.length : undefined}
 						>
@@ -295,7 +294,7 @@ export default function ProductFilter({
 									onClick={() => onChange({ ...filter, tags: new Set() })}
 									className="text-xs text-blue-600 hover:text-blue-800 hover:underline mt-2"
 								>
-									Clear tags
+									{cms.filter.clearTags}
 								</button>
 							)}
 						</FilterSection>
@@ -304,7 +303,7 @@ export default function ProductFilter({
 					{/* Individual product toggles */}
 					{showProductSelector && (
 						<FilterSection
-							title="Products"
+							title={cms.filter.products}
 							count={visibleProducts.length - filter.excludedProductIds.size}
 							total={visibleProducts.length}
 						>
@@ -313,7 +312,7 @@ export default function ProductFilter({
 									type="text"
 									value={productSearch}
 									onChange={(e) => setProductSearch(e.target.value)}
-									placeholder="Search products…"
+									placeholder={cms.filter.searchPlaceholder}
 									className="w-full text-sm pl-8 pr-3 py-1.5 border border-gray-200 rounded-md bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
 								/>
 								<svg
@@ -340,7 +339,7 @@ export default function ProductFilter({
 									}
 									className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
 								>
-									Select All
+									{cms.filter.selectAll}
 								</button>
 								<button
 									type="button"
@@ -352,7 +351,7 @@ export default function ProductFilter({
 									}
 									className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
 								>
-									Deselect All
+									{cms.filter.deselectAll}
 								</button>
 							</div>
 							<div className="max-h-48 overflow-y-auto rounded-md border border-gray-100 bg-gray-50/50 divide-y divide-gray-100">
@@ -384,8 +383,8 @@ export default function ProductFilter({
 								{filteredProducts.length === 0 && (
 									<p className="text-xs text-gray-400 text-center py-4">
 										{productSearch.trim()
-											? "No products match your search."
-											: "No products match the current type/bank filters."}
+											? cms.filter.noMatchSearch
+											: cms.filter.noMatchFilter}
 									</p>
 								)}
 							</div>

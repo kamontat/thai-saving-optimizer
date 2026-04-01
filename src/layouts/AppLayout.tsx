@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { cms } from "../constants/index.ts";
 
 export default function AppLayout({ children }: { children: ReactNode }) {
 	return (
@@ -6,20 +7,20 @@ export default function AppLayout({ children }: { children: ReactNode }) {
 			<header className="bg-white shadow-sm border-b border-gray-200">
 				<div className="container mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
 					<a href="#/" className="text-xl font-bold text-gray-900">
-						Thai Bank Interest Optimizer
+						{cms.app.title}
 					</a>
 					<nav className="flex gap-4">
 						<a
 							href="#/"
 							className="text-sm font-medium text-gray-600 hover:text-gray-900"
 						>
-							Products
+							{cms.nav.products}
 						</a>
 						<a
 							href="#/optimize"
 							className="text-sm font-medium text-gray-600 hover:text-gray-900"
 						>
-							Optimizer
+							{cms.nav.optimizer}
 						</a>
 					</nav>
 				</div>
@@ -28,7 +29,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
 				{children}
 			</main>
 			<footer className="bg-white border-t border-gray-200 py-4 text-center text-sm text-gray-500">
-				Thai Bank Interest Optimization — For educational purposes only
+				{cms.app.footer}
 			</footer>
 		</div>
 	);

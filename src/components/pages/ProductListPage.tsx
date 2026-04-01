@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { formatPercent } from "../../calculator/index.ts";
+import { formatDate, formatPercent } from "../../calculator/index.ts";
+import { cms } from "../../constants/index.ts";
 import { products } from "../../products/index.ts";
 import ProductFilter, {
 	applyFilter,
@@ -40,7 +41,7 @@ export default function ProductListPage() {
 	return (
 		<div className="space-y-6">
 			<h1 className="text-2xl font-bold text-gray-900">
-				Savings &amp; Deposit Products
+				{cms.productList.title}
 			</h1>
 			<div className="bg-white rounded-lg shadow p-6">
 				<ProductFilter
@@ -54,11 +55,15 @@ export default function ProductListPage() {
 				<table className="w-full text-sm">
 					<thead>
 						<tr className="border-b border-gray-200 bg-gray-50 text-left text-gray-600">
-							<th className="py-3 px-4">Product</th>
-							<th className="py-3 px-4">Bank</th>
-							<th className="py-3 px-4 text-right">Headline Rate</th>
-							<th className="py-3 px-4">Type</th>
-							<th className="py-3 px-4 text-right">Updated</th>
+							<th className="py-3 px-4">{cms.productList.columns.product}</th>
+							<th className="py-3 px-4">{cms.productList.columns.bank}</th>
+							<th className="py-3 px-4 text-right">
+								{cms.productList.columns.headlineRate}
+							</th>
+							<th className="py-3 px-4">{cms.productList.columns.type}</th>
+							<th className="py-3 px-4 text-right">
+								{cms.productList.columns.updated}
+							</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -81,14 +86,14 @@ export default function ProductListPage() {
 									<ProductTypeBadge type={product.type} />
 								</td>
 								<td className="py-3 px-4 text-right text-gray-400 text-xs">
-									{product.updatedAt}
+									{formatDate(product.updatedAt)}
 								</td>
 							</tr>
 						))}
 						{pageProducts.length === 0 && (
 							<tr>
 								<td colSpan={5} className="py-8 text-center text-gray-400">
-									No products match the current filters.
+									{cms.productList.emptyState}
 								</td>
 							</tr>
 						)}
@@ -108,7 +113,7 @@ export default function ProductListPage() {
 								onClick={() => setPage(safeePage - 1)}
 								className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed"
 							>
-								Previous
+								{cms.productList.pagination.previous}
 							</button>
 							<span className="text-gray-600">
 								Page {safeePage + 1} of {totalPages}
@@ -119,7 +124,7 @@ export default function ProductListPage() {
 								onClick={() => setPage(safeePage + 1)}
 								className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed"
 							>
-								Next
+								{cms.productList.pagination.next}
 							</button>
 						</div>
 					)}

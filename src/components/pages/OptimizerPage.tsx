@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { optimizeAllocation } from "../../calculator/index.ts";
+import { cms } from "../../constants/index.ts";
 import { products } from "../../products/index.ts";
 import AllocationResult from "../AllocationResult.tsx";
 import AmountInput from "../AmountInput.tsx";
@@ -27,11 +28,10 @@ export default function OptimizerPage() {
 
 	return (
 		<div className="space-y-6">
-			<h1 className="text-2xl font-bold text-gray-900">Interest Optimizer</h1>
-			<p className="text-sm text-gray-600">
-				Enter your total deposit amount to see the optimal split across products
-				that maximizes your interest returns.
-			</p>
+			<h1 className="text-2xl font-bold text-gray-900">
+				{cms.optimizer.title}
+			</h1>
+			<p className="text-sm text-gray-600">{cms.optimizer.description}</p>
 			<div className="bg-white rounded-lg shadow p-6 space-y-6">
 				<AmountInput value={amount} onChange={setAmount} />
 				<ProductFilter

@@ -1,4 +1,5 @@
 import { formatCurrency, formatPercent } from "../calculator/index.ts";
+import { cms } from "../constants/index.ts";
 import type { Allocation } from "../models/types.ts";
 
 export default function AllocationResult({
@@ -9,11 +10,7 @@ export default function AllocationResult({
 	onExclude?: (productId: string) => void;
 }) {
 	if (allocations.length === 0) {
-		return (
-			<p className="text-sm text-gray-500">
-				No allocations to display. Enter an amount above.
-			</p>
-		);
+		return <p className="text-sm text-gray-500">{cms.allocation.emptyState}</p>;
 	}
 
 	const totalAmount = allocations.reduce((sum, a) => sum + a.amount, 0);
@@ -25,10 +22,16 @@ export default function AllocationResult({
 			<table className="w-full text-sm border-collapse">
 				<thead>
 					<tr className="border-b border-gray-200 text-left text-gray-600">
-						<th className="py-2 pr-4">Product</th>
-						<th className="py-2 pr-4 text-right">Amount</th>
-						<th className="py-2 pr-4 text-right">Annual Interest</th>
-						<th className="py-2 text-right">Effective Rate</th>
+						<th className="py-2 pr-4">{cms.allocation.columns.product}</th>
+						<th className="py-2 pr-4 text-right">
+							{cms.allocation.columns.amount}
+						</th>
+						<th className="py-2 pr-4 text-right">
+							{cms.allocation.columns.annualInterest}
+						</th>
+						<th className="py-2 text-right">
+							{cms.allocation.columns.effectiveRate}
+						</th>
 						{onExclude && (
 							<th className="py-2 pl-4 w-8">
 								<span className="sr-only">Actions</span>
@@ -96,7 +99,7 @@ export default function AllocationResult({
 				</tbody>
 				<tfoot>
 					<tr className="border-t-2 border-gray-300 font-semibold">
-						<td className="py-2 pr-4">Total</td>
+						<td className="py-2 pr-4">{cms.allocation.total}</td>
 						<td className="py-2 pr-4 text-right font-mono">
 							{formatCurrency(totalAmount)}
 						</td>

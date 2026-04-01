@@ -2,11 +2,15 @@ import { useState } from "react";
 import {
 	calculateProductInterest,
 	formatCurrency,
+	formatDate,
 	formatPercent,
 	getProductById,
 } from "../../calculator/index.ts";
+import { cms, type MetadataKey } from "../../constants/index.ts";
 import AmountInput from "../AmountInput.tsx";
 import ProductTypeBadge from "../ProductTypeBadge.tsx";
+
+const HIDDEN_METADATA_KEYS: MetadataKey[] = ["officialName", "notes"];
 
 export default function ProductDetailPage({ id }: { id: string }) {
 	const product = getProductById(id);
@@ -15,9 +19,9 @@ export default function ProductDetailPage({ id }: { id: string }) {
 	if (!product) {
 		return (
 			<div>
-				<p className="text-gray-500">Product not found.</p>
+				<p className="text-gray-500">{cms.productDetail.notFound}</p>
 				<a href="#/" className="text-blue-600 hover:underline text-sm">
-					← Back to products
+					{cms.productDetail.backToProducts}
 				</a>
 			</div>
 		);
@@ -35,7 +39,7 @@ export default function ProductDetailPage({ id }: { id: string }) {
 	return (
 		<div className="space-y-6">
 			<a href="#/" className="text-blue-600 hover:underline text-sm">
-				← Back to products
+				{cms.productDetail.backToProducts}
 			</a>
 
 			{/* Header */}
@@ -75,51 +79,34 @@ export default function ProductDetailPage({ id }: { id: string }) {
 			{/* Info section */}
 			<div className="bg-white rounded-lg shadow p-6 space-y-3">
 				<h2 className="text-lg font-semibold text-gray-900">
-					Product Information
+					{cms.productDetail.productInfo}
 				</h2>
 				<dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-					<div>
-						<dt className="text-gray-500">Category</dt>
-						<dd className="text-gray-900">
-							{product.metadata.productCategory}
-						</dd>
-					</div>
-					<div>
-						<dt className="text-gray-500">Interest Calculation</dt>
-						<dd className="text-gray-900">
-							{product.metadata.interestCalculation}
-						</dd>
-					</div>
-					<div>
-						<dt className="text-gray-500">Payout Frequency</dt>
-						<dd className="text-gray-900">
-							{product.metadata.payoutFrequency}
-						</dd>
-					</div>
-					{product.metadata.insuranceNote && (
-						<div>
-							<dt className="text-gray-500">Insurance</dt>
-							<dd className="text-gray-900">
-								{product.metadata.insuranceNote}
-							</dd>
-						</div>
-					)}
-					{product.metadata.promotionEnd && (
-						<div>
-							<dt className="text-gray-500">Promotion Ends</dt>
-							<dd className="text-gray-900">{product.metadata.promotionEnd}</dd>
-						</div>
-					)}
+					{(Object.keys(cms.metadata) as MetadataKey[]).map((key) => {
+						if (HIDDEN_METADATA_KEYS.includes(key)) return null;
+						const value = product.metadata[key];
+						if (!value) return null;
+						return (
+							<div key={key}>
+								<dt className="text-gray-500">{cms.metadata[key]}</dt>
+								<dd className="text-gray-900">{value}</dd>
+							</div>
+						);
+					})}
 					{(product.type === "fixed-deposit" ||
 						product.type === "long-term") && (
 						<>
 							<div>
-								<dt className="text-gray-500">Term Length</dt>
+								<dt className="text-gray-500">
+									{cms.productDetail.termLength}
+								</dt>
 								<dd className="text-gray-900">{product.termMonths} months</dd>
 							</div>
 							{product.minDeposit !== undefined && (
 								<div>
-									<dt className="text-gray-500">Min Deposit</dt>
+									<dt className="text-gray-500">
+										{cms.productDetail.minDeposit}
+									</dt>
 									<dd className="text-gray-900">
 										{formatCurrency(product.minDeposit)}
 									</dd>
@@ -127,7 +114,9 @@ export default function ProductDetailPage({ id }: { id: string }) {
 							)}
 							{product.maxDeposit !== undefined && (
 								<div>
-									<dt className="text-gray-500">Max Deposit</dt>
+									<dt className="text-gray-500">
+										{cms.productDetail.maxDeposit}
+									</dt>
 									<dd className="text-gray-900">
 										{formatCurrency(product.maxDeposit)}
 									</dd>
@@ -141,14 +130,16 @@ export default function ProductDetailPage({ id }: { id: string }) {
 			{/* Tier table */}
 			<div className="bg-white rounded-lg shadow p-6">
 				<h2 className="text-lg font-semibold text-gray-900 mb-3">
-					Interest Tiers
+					{cms.productDetail.interestTiers}
 				</h2>
 				<table className="w-full text-sm">
 					<thead>
 						<tr className="border-b border-gray-200 text-left text-gray-600">
-							<th className="py-2 pr-4">Min (THB)</th>
-							<th className="py-2 pr-4">Max (THB)</th>
-							<th className="py-2 text-right">Rate</th>
+							<th className="py-2 pr-4">{cms.productDetail.tierColumns.min}</th>
+							<th className="py-2 pr-4">{cms.productDetail.tierColumns.max}</th>
+							<th className="py-2 text-right">
+								{cms.productDetail.tierColumns.rate}
+							</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -197,30 +188,30 @@ export default function ProductDetailPage({ id }: { id: string }) {
 
 			{/* Last updated */}
 			<p className="text-xs text-gray-400">
-				Data last updated: {product.updatedAt}
+				{cms.productDetail.lastUpdated} {formatDate(product.updatedAt)}
 			</p>
 
 			{/* Try-it calculator */}
 			<div className="bg-white rounded-lg shadow p-6">
 				<h2 className="text-lg font-semibold text-gray-900 mb-3">
-					Try It — Calculate Interest
+					{cms.productDetail.tryCalculator.title}
 				</h2>
 				<AmountInput
 					id="try-amount"
-					label="Deposit Amount (THB):"
+					label={cms.productDetail.tryCalculator.depositLabel}
 					value={tryAmount}
 					onChange={setTryAmount}
 				/>
 				{interest !== null && effectiveRate !== null && (
 					<div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
 						<p className="text-sm text-gray-700">
-							Annual Interest:{" "}
+							{cms.productDetail.tryCalculator.annualInterest}{" "}
 							<span className="font-semibold text-green-700">
 								{formatCurrency(interest)}
 							</span>
 						</p>
 						<p className="text-sm text-gray-700">
-							Effective Rate:{" "}
+							{cms.productDetail.tryCalculator.effectiveRate}{" "}
 							<span className="font-semibold text-green-700">
 								{formatPercent(effectiveRate)}
 							</span>
@@ -237,7 +228,7 @@ export default function ProductDetailPage({ id }: { id: string }) {
 					rel="noopener noreferrer"
 					className="text-blue-600 hover:underline"
 				>
-					View official product page →
+					{cms.productDetail.officialLink}
 				</a>
 			</div>
 		</div>
