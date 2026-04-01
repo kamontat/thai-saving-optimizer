@@ -36,5 +36,5 @@ export const kbankTaweesup: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด 24 เดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 6 ม.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

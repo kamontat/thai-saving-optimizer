@@ -23,7 +23,7 @@ export const scbSavings: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 1 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const scbEasySavings: SavingsProduct = {
@@ -54,7 +54,7 @@ export const scbEasySavings: SavingsProduct = {
 		payoutFrequency: "เดือนละ 1 ครั้ง ทุกวันที่ 25 ของแต่ละเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 1 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const scbJadTem: SavingsProduct = {
@@ -86,5 +86,5 @@ export const scbJadTem: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 1 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

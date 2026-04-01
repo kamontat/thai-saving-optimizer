@@ -30,5 +30,5 @@ export const ttbNoFixed: SavingsProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

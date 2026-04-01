@@ -32,5 +32,5 @@ export const kkpFixedSpecial10m: FixedDepositProduct = {
 		notes:
 			"โครงการพิเศษ ตั้งแต่ 12 ม.ค. – 31 มี.ค. 2569 อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

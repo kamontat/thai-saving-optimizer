@@ -32,7 +32,7 @@ export const kkpTaxFree24m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 		notes: "อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const kkpTaxFree36m: FixedDepositProduct = {
@@ -64,5 +64,5 @@ export const kkpTaxFree36m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 		notes: "อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

@@ -31,7 +31,7 @@ export const kkpFree55Up12m: FixedDepositProduct = {
 		notes:
 			"ปลอดภาษีดอกเบี้ยหากรวมทุกบัญชีไม่เกิน 30,000 บาท/ปี อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const kkpFree55Up24m: FixedDepositProduct = {
@@ -62,5 +62,5 @@ export const kkpFree55Up24m: FixedDepositProduct = {
 		notes:
 			"ปลอดภาษีดอกเบี้ยหากรวมทุกบัญชีไม่เกิน 30,000 บาท/ปี อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

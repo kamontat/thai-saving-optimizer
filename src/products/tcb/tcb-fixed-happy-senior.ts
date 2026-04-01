@@ -30,5 +30,5 @@ export const tcbHappySenior12m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด โอนเข้าบัญชีออมทรัพย์คู่โอน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

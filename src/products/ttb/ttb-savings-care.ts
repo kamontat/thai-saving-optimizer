@@ -27,5 +27,5 @@ export const ttbSavingsCare: SavingsProduct = {
 		insuranceNote: "ประกันอุบัติเหตุ 20 เท่าของเงินฝาก สูงสุด 3,000,000 บาท/ปี",
 		notes: "อัตราดอกเบี้ยมีผล ณ มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

@@ -30,7 +30,7 @@ export const ttbUpAndUp12m: FixedDepositProduct = {
 		officialName: "บัญชีเงินฝากประจำ ทีทีบี อัพ แอนด์ อัพ 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยทุก 3 เดือน",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbUpAndUp24m: FixedDepositProduct = {
@@ -50,5 +50,5 @@ export const ttbUpAndUp24m: FixedDepositProduct = {
 		officialName: "บัญชีเงินฝากประจำ ทีทีบี อัพ แอนด์ อัพ 24 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยทุก 3 เดือน",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

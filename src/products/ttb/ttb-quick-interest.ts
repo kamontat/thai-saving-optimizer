@@ -33,7 +33,7 @@ export const ttbQuickInterest3m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ ทีทีบี ดอกเบี้ยด่วน 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยภายใน 7 วันหลังฝาก",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbQuickInterest12m: FixedDepositProduct = {
@@ -54,5 +54,5 @@ export const ttbQuickInterest12m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ ทีทีบี ดอกเบี้ยด่วน 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยภายใน 7 วันหลังฝาก",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

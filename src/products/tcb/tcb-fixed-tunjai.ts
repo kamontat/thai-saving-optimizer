@@ -27,5 +27,5 @@ export const tcbFixedTunjai12m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยทันที ณ วันฝาก (กรณีฝากด้วยเงินสด)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

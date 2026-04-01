@@ -26,5 +26,5 @@ export const cimbBasicBanking: SavingsProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 11 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

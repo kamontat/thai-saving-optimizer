@@ -40,5 +40,5 @@ export const kkpStartSaving: SavingsProduct = {
 		notes:
 			"อยู่ภายใต้โครงการ Regulatory Sandbox ของธนาคารแห่งประเทศไทย อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569 รวมดอกเบี้ยโบนัสจากแคมเปญตั้งฝากอัตโนมัติ",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

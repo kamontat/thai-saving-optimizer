@@ -26,5 +26,5 @@ export const ttbExclusive9m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 		notes: "อัตราดอกเบี้ยมีผล ณ มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

@@ -31,7 +31,7 @@ export const ttbFixed3m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำทั่วไป 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbFixed6m: FixedDepositProduct = {
@@ -52,7 +52,7 @@ export const ttbFixed6m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำทั่วไป 6 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbFixed12m: FixedDepositProduct = {
@@ -73,7 +73,7 @@ export const ttbFixed12m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำทั่วไป 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbFixed24m: FixedDepositProduct = {
@@ -98,7 +98,7 @@ export const ttbFixed24m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำทั่วไป 24 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbFixed36m: FixedDepositProduct = {
@@ -123,5 +123,5 @@ export const ttbFixed36m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำทั่วไป 36 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

@@ -32,7 +32,7 @@ export const ttbFixedPlus4m: FixedDepositProduct = {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 4 เดือน",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbFixedPlus7m: FixedDepositProduct = {
@@ -52,7 +52,7 @@ export const ttbFixedPlus7m: FixedDepositProduct = {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 7 เดือน",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbFixedPlus12m: FixedDepositProduct = {
@@ -73,7 +73,7 @@ export const ttbFixedPlus12m: FixedDepositProduct = {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 12 เดือน",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbFixedPlus18m: FixedDepositProduct = {
@@ -94,5 +94,5 @@ export const ttbFixedPlus18m: FixedDepositProduct = {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 18 เดือน",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

@@ -37,7 +37,7 @@ export const cimbPhemkhaSabaiJai24m: LongTermProduct = {
 		officialName: "เงินฝากประจำเพิ่มค่าสบายใจ 24 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const cimbPhemkhaSabaiJai36m: LongTermProduct = {
@@ -59,5 +59,5 @@ export const cimbPhemkhaSabaiJai36m: LongTermProduct = {
 		officialName: "เงินฝากประจำเพิ่มค่าสบายใจ 36 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

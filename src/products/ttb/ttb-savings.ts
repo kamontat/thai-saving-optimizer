@@ -29,7 +29,7 @@ export const ttbAllFree: SavingsProduct = {
 		officialName: "บัญชีเงินฝากออมทรัพย์ ทีทีบี ออลล์ฟรี",
 		insuranceNote: "ประกันอุบัติเหตุ 20 เท่าของเงินฝาก สูงสุด 3,000,000 บาท",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbBasic: SavingsProduct = {
@@ -47,7 +47,7 @@ export const ttbBasic: SavingsProduct = {
 		...baseMetadata,
 		officialName: "บัญชีเงินฝากออมทรัพย์ ทีทีบี เบสิก",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const ttbPuentarn: SavingsProduct = {
@@ -65,5 +65,5 @@ export const ttbPuentarn: SavingsProduct = {
 		...baseMetadata,
 		officialName: "บัญชีเงินฝากพื้นฐาน ทีทีบี",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };

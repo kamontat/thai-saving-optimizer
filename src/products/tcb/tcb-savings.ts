@@ -25,7 +25,7 @@ export const tcbSavings: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const tcbBasicBanking: SavingsProduct = {
@@ -52,7 +52,7 @@ export const tcbBasicBanking: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const tcbPlusSpecial: SavingsProduct = {
@@ -85,7 +85,7 @@ export const tcbPlusSpecial: SavingsProduct = {
 		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const tcbTemKrapuk: SavingsProduct = {
@@ -114,7 +114,7 @@ export const tcbTemKrapuk: SavingsProduct = {
 		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const tcbPlusAccountOne: SavingsProduct = {
@@ -145,7 +145,7 @@ export const tcbPlusAccountOne: SavingsProduct = {
 		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const tcbPlusHi: SavingsProduct = {
@@ -176,7 +176,7 @@ export const tcbPlusHi: SavingsProduct = {
 		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const tcbBizPlus: SavingsProduct = {
@@ -210,7 +210,7 @@ export const tcbBizPlus: SavingsProduct = {
 		payoutFrequency: "เดือนละ 1 ครั้ง คำนวณดอกเบี้ยถึงวันที่ 25 ของทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
 
 export const tcbBizDefined: SavingsProduct = {
@@ -241,5 +241,5 @@ export const tcbBizDefined: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (วันที่ 25 มิถุนายน และ 25 ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 18 มี.ค. 2569",
 	},
-	updatedAt: "2026-03-24",
+	updatedAt: new Date("2026-03-24"),
 };
