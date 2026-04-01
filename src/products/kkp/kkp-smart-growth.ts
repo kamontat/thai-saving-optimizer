@@ -29,4 +29,5 @@ export const kkpSmartGrowth: SavingsProduct = {
 		notes:
 			"ต้องมีหน่วยลงทุนกองทุน บลจ.เกียรตินาคินภัทร >= 100,000 บาท อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

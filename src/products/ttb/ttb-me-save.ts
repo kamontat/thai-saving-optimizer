@@ -13,8 +13,7 @@ export const ttbMeSave: SavingsProduct = {
 	],
 	url: "https://www.ttbbank.com/th/personal/deposits/savings-account/ttb-me-save",
 	tags: ["digital", "high-rate", "no-min-deposit", "tiered"],
-	description:
-		"บัญชีเงินฝากดิจิทัล ออมง่ายได้ดอกสูง ไม่ต้องฝากประจำ ดูดอกเบี้ยสะสมได้ทุกวัน",
+	description: "บัญชีเงินฝากดิจิทัล ออมง่ายได้ดอกสูง ไม่ต้องฝากประจำ ดูดอกเบี้ยสะสมได้ทุกวัน",
 	conditions: [
 		"ลูกค้า 1 ราย เปิดบัญชีได้เพียง 1 บัญชี (ทุกสาขารวมกัน)",
 		"ต้องไม่ใช่บัญชีร่วม",
@@ -30,4 +29,5 @@ export const ttbMeSave: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ มี.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

@@ -30,6 +30,7 @@ export const kbankSavings: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 6 ม.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kbankESavings: SavingsProduct = {
@@ -58,6 +59,7 @@ export const kbankESavings: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 6 ม.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kbankEPocket: SavingsProduct = {
@@ -87,4 +89,5 @@ export const kbankEPocket: SavingsProduct = {
 		payoutFrequency: "ปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ 6 ม.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

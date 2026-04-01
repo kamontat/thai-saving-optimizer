@@ -25,15 +25,13 @@ export const ttbFixed3m: FixedDepositProduct = {
 	url: baseUrl,
 	tags: [],
 	description: "เงินฝากประจำ ttb 3 เดือน ดอกเบี้ย 0.55% ต่อปี",
-	conditions: [
-		...baseConditions,
-		"บัญชี 3 เดือน สามารถถอนเพียงบางส่วนได้",
-	],
+	conditions: [...baseConditions, "บัญชี 3 เดือน สามารถถอนเพียงบางส่วนได้"],
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำทั่วไป 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbFixed6m: FixedDepositProduct = {
@@ -48,15 +46,13 @@ export const ttbFixed6m: FixedDepositProduct = {
 	url: baseUrl,
 	tags: [],
 	description: "เงินฝากประจำ ttb 6 เดือน ดอกเบี้ย 0.75% ต่อปี",
-	conditions: [
-		...baseConditions,
-		"บัญชี 6 เดือน สามารถถอนเพียงบางส่วนได้",
-	],
+	conditions: [...baseConditions, "บัญชี 6 เดือน สามารถถอนเพียงบางส่วนได้"],
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำทั่วไป 6 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbFixed12m: FixedDepositProduct = {
@@ -71,15 +67,13 @@ export const ttbFixed12m: FixedDepositProduct = {
 	url: baseUrl,
 	tags: [],
 	description: "เงินฝากประจำ ttb 12 เดือน ดอกเบี้ย 1.15% ต่อปี",
-	conditions: [
-		...baseConditions,
-		"บัญชี 12 เดือน สามารถถอนเพียงบางส่วนได้",
-	],
+	conditions: [...baseConditions, "บัญชี 12 เดือน สามารถถอนเพียงบางส่วนได้"],
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำทั่วไป 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbFixed24m: FixedDepositProduct = {
@@ -104,6 +98,7 @@ export const ttbFixed24m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำทั่วไป 24 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbFixed36m: FixedDepositProduct = {
@@ -128,4 +123,5 @@ export const ttbFixed36m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำทั่วไป 36 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };

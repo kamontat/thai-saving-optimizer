@@ -26,9 +26,9 @@ export const ttbNoFixed: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์ ทีทีบี โนฟิกซ์",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน แบบขั้นบันได",
+		interestCalculation: "คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน แบบขั้นบันได",
 		payoutFrequency: "จ่ายดอกเบี้ยทุกเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ มี.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

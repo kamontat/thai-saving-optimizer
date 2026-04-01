@@ -6,9 +6,7 @@ export const ttbDreamSavings: SavingsProduct = {
 	name: "ttb Dream Savings",
 	bank: "TMBThanachart Bank (ttb)",
 	headlineRate: 0.25,
-	tiers: [
-		{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.25 },
-	],
+	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.25 }],
 	url: "https://www.ttbbank.com/th/personal/deposits/savings-account/ttb-dream-savings",
 	tags: ["digital"],
 	description:
@@ -24,9 +22,9 @@ export const ttbDreamSavings: SavingsProduct = {
 	metadata: {
 		officialName: "บัญชีเงินฝากออมทรัพย์ ทีทีบี ดรีม เซฟวิ่ง",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน",
+		interestCalculation: "คำนวณดอกเบี้ยเป็นรายวันจากยอดเงินคงเหลือ ณ สิ้นวัน",
 		payoutFrequency: "ปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ มี.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

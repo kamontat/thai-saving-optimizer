@@ -36,6 +36,7 @@ export const cimbFixedD3m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำดิจิทัล Fixed D 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const cimbFixedD6m: FixedDepositProduct = {
@@ -56,6 +57,7 @@ export const cimbFixedD6m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำดิจิทัล Fixed D 6 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const cimbFixedD9m: FixedDepositProduct = {
@@ -76,6 +78,7 @@ export const cimbFixedD9m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำดิจิทัล Fixed D 9 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const cimbFixedD12m: FixedDepositProduct = {
@@ -96,4 +99,5 @@ export const cimbFixedD12m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำดิจิทัล Fixed D 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };

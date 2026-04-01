@@ -95,16 +95,6 @@ import {
 	tcbTemKrapuk,
 } from "./tcb/tcb-savings.ts";
 import { tcbTaxFree24m, tcbTaxFree36m } from "./tcb/tcb-tax-free.ts";
-import {
-	uobFixed3m,
-	uobFixed6m,
-	uobFixed12m,
-	uobFixed24m,
-	uobFixed36m,
-} from "./uob/uob-fixed-deposits.ts";
-import { uobOneAccount } from "./uob/uob-one-account.ts";
-import { uobStash } from "./uob/uob-stash.ts";
-import { uobTmrwSavings } from "./uob/uob-tmrw-savings.ts";
 import { ttbDreamSavings } from "./ttb/ttb-dream-savings.ts";
 import { ttbExclusive9m } from "./ttb/ttb-exclusive.ts";
 import {
@@ -120,11 +110,7 @@ import {
 	ttbQuickInterest3m,
 	ttbQuickInterest12m,
 } from "./ttb/ttb-quick-interest.ts";
-import {
-	ttbAllFree,
-	ttbBasic,
-	ttbPuentarn,
-} from "./ttb/ttb-savings.ts";
+import { ttbAllFree, ttbBasic, ttbPuentarn } from "./ttb/ttb-savings.ts";
 import { ttbSavingsCare } from "./ttb/ttb-savings-care.ts";
 import {
 	ttbFixedPlus4m,
@@ -133,10 +119,17 @@ import {
 	ttbFixedPlus18m,
 } from "./ttb/ttb-term-deposit-plus.ts";
 import { ttbTheExclusiveSavings } from "./ttb/ttb-the-exclusive-savings.ts";
+import { ttbUpAndUp12m, ttbUpAndUp24m } from "./ttb/ttb-up-and-up.ts";
 import {
-	ttbUpAndUp12m,
-	ttbUpAndUp24m,
-} from "./ttb/ttb-up-and-up.ts";
+	uobFixed3m,
+	uobFixed6m,
+	uobFixed12m,
+	uobFixed24m,
+	uobFixed36m,
+} from "./uob/uob-fixed-deposits.ts";
+import { uobOneAccount } from "./uob/uob-one-account.ts";
+import { uobStash } from "./uob/uob-stash.ts";
+import { uobTmrwSavings } from "./uob/uob-tmrw-savings.ts";
 
 export const products: Product[] = [
 	// Savings accounts

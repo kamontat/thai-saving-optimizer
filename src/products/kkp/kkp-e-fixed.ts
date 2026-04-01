@@ -30,6 +30,7 @@ export const kkpEFixed3m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 		notes: "อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpEFixed6m: FixedDepositProduct = {
@@ -59,6 +60,7 @@ export const kkpEFixed6m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 		notes: "อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpEFixed12m: FixedDepositProduct = {
@@ -88,6 +90,7 @@ export const kkpEFixed12m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 		notes: "อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpEFixedSpecial10m: FixedDepositProduct = {
@@ -118,4 +121,5 @@ export const kkpEFixedSpecial10m: FixedDepositProduct = {
 		notes:
 			"โครงการพิเศษ ตั้งแต่ 12 ม.ค. – 31 มี.ค. 2569 อัตราดอกเบี้ยมีผล ณ 27 ก.พ. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

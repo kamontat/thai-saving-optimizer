@@ -37,6 +37,7 @@ export const scbBonus24m: LongTermProduct = {
 		officialName: "เงินฝากโบนัส / เงินฝากระยะยาว 24 เดือน (E-Passbook)",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const scbBonus36m: LongTermProduct = {
@@ -59,4 +60,5 @@ export const scbBonus36m: LongTermProduct = {
 		officialName: "เงินฝากโบนัส / เงินฝากระยะยาว 36 เดือน (E-Passbook)",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };

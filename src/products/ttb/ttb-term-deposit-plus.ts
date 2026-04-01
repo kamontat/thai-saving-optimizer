@@ -26,16 +26,13 @@ export const ttbFixedPlus4m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.65 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"เงินฝากประจำ พลัส 4 เดือน ดอกเบี้ยสูงกว่าฝากประจำทั่วไป รับดอกเบี้ยรายเดือน",
-	conditions: [
-		"เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 10,000 บาท",
-		...baseConditions,
-	],
+	description: "เงินฝากประจำ พลัส 4 เดือน ดอกเบี้ยสูงกว่าฝากประจำทั่วไป รับดอกเบี้ยรายเดือน",
+	conditions: ["เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 10,000 บาท", ...baseConditions],
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 4 เดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbFixedPlus7m: FixedDepositProduct = {
@@ -49,16 +46,13 @@ export const ttbFixedPlus7m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.85 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"เงินฝากประจำ พลัส 7 เดือน ดอกเบี้ยสูงกว่าฝากประจำทั่วไป รับดอกเบี้ยรายเดือน",
-	conditions: [
-		"เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 10,000 บาท",
-		...baseConditions,
-	],
+	description: "เงินฝากประจำ พลัส 7 เดือน ดอกเบี้ยสูงกว่าฝากประจำทั่วไป รับดอกเบี้ยรายเดือน",
+	conditions: ["เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 10,000 บาท", ...baseConditions],
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 7 เดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbFixedPlus12m: FixedDepositProduct = {
@@ -74,14 +68,12 @@ export const ttbFixedPlus12m: FixedDepositProduct = {
 	tags: [],
 	description:
 		"เงินฝากประจำ พลัส 12 เดือน ดอกเบี้ยสูงกว่าฝากประจำทั่วไป รับดอกเบี้ยรายเดือน",
-	conditions: [
-		"เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 100,000 บาท",
-		...baseConditions,
-	],
+	conditions: ["เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 100,000 บาท", ...baseConditions],
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 12 เดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbFixedPlus18m: FixedDepositProduct = {
@@ -97,12 +89,10 @@ export const ttbFixedPlus18m: FixedDepositProduct = {
 	tags: [],
 	description:
 		"เงินฝากประจำ พลัส 18 เดือน ดอกเบี้ยสูงกว่าฝากประจำทั่วไป รับดอกเบี้ยรายเดือน",
-	conditions: [
-		"เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 10,000 บาท",
-		...baseConditions,
-	],
+	conditions: ["เปิดบัญชีครั้งแรกและฝากเพิ่มตั้งแต่ 10,000 บาท", ...baseConditions],
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ พลัส 18 เดือน",
 	},
+	updatedAt: "2026-03-24",
 };

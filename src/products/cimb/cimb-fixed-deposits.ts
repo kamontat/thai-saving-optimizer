@@ -34,6 +34,7 @@ export const cimbFixed3m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const cimbFixed6m: FixedDepositProduct = {
@@ -54,6 +55,7 @@ export const cimbFixed6m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 6 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const cimbFixed12m: FixedDepositProduct = {
@@ -74,6 +76,7 @@ export const cimbFixed12m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const cimbFixed24m: FixedDepositProduct = {
@@ -94,6 +97,7 @@ export const cimbFixed24m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 24 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const cimbFixed36m: FixedDepositProduct = {
@@ -114,4 +118,5 @@ export const cimbFixed36m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำประเภทสมุดคู่ฝาก 36 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือเลือกรับดอกเบี้ยรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };

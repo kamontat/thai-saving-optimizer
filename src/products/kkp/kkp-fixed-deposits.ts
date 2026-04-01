@@ -36,6 +36,7 @@ export const kkpFixed3m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpFixed6m: FixedDepositProduct = {
@@ -59,6 +60,7 @@ export const kkpFixed6m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 6 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpFixed9m: FixedDepositProduct = {
@@ -82,6 +84,7 @@ export const kkpFixed9m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 9 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpFixed12m: FixedDepositProduct = {
@@ -105,6 +108,7 @@ export const kkpFixed12m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 12 เดือน",
 		payoutFrequency: "เลือกรับดอกเบี้ยราย 6 เดือน หรือเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpFixed24m: FixedDepositProduct = {
@@ -128,6 +132,7 @@ export const kkpFixed24m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 24 เดือน",
 		payoutFrequency: "เลือกรับดอกเบี้ยราย 6 เดือน หรือเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const kkpFixed36m: FixedDepositProduct = {
@@ -151,4 +156,5 @@ export const kkpFixed36m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 36 เดือน",
 		payoutFrequency: "เลือกรับดอกเบี้ยราย 6 เดือน หรือเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };

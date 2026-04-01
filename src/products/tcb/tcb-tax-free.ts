@@ -39,6 +39,7 @@ export const tcbTaxFree24m: LongTermProduct = {
 		officialName: "บัญชีเงินฝากปลอดภาษี 24 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด 24 งวด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const tcbTaxFree36m: LongTermProduct = {
@@ -60,4 +61,5 @@ export const tcbTaxFree36m: LongTermProduct = {
 		officialName: "บัญชีเงินฝากปลอดภาษี 36 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด 36 งวด",
 	},
+	updatedAt: "2026-03-24",
 };

@@ -29,4 +29,5 @@ export const cimbSeniorFixed12m: FixedDepositProduct = {
 		payoutFrequency: "จ่ายดอกเบี้ยรายเดือน",
 		notes: "อัตราดอกเบี้ยมีผล ณ 11 มี.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

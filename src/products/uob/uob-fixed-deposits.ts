@@ -34,6 +34,7 @@ export const uobFixed3m: FixedDepositProduct = {
 		officialName: "บัญชียูโอบี ฝากประจำ 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const uobFixed6m: FixedDepositProduct = {
@@ -54,6 +55,7 @@ export const uobFixed6m: FixedDepositProduct = {
 		officialName: "บัญชียูโอบี ฝากประจำ 6 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const uobFixed12m: FixedDepositProduct = {
@@ -74,6 +76,7 @@ export const uobFixed12m: FixedDepositProduct = {
 		officialName: "บัญชียูโอบี ฝากประจำ 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือรายเดือน",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const uobFixed24m: FixedDepositProduct = {
@@ -94,6 +97,7 @@ export const uobFixed24m: FixedDepositProduct = {
 		officialName: "บัญชียูโอบี ฝากประจำ 24 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือรายปี",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const uobFixed36m: FixedDepositProduct = {
@@ -114,4 +118,5 @@ export const uobFixed36m: FixedDepositProduct = {
 		officialName: "บัญชียูโอบี ฝากประจำ 36 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด หรือรายปี",
 	},
+	updatedAt: "2026-03-24",
 };

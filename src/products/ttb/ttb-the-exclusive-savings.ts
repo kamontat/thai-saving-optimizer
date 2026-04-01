@@ -6,9 +6,7 @@ export const ttbTheExclusiveSavings: SavingsProduct = {
 	name: "ttb The Exclusive Savings",
 	bank: "TMBThanachart Bank (ttb)",
 	headlineRate: 0.5,
-	tiers: [
-		{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.5 },
-	],
+	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.5 }],
 	url: "https://www.ttbbank.com/th/personal/deposits/savings-account/ttb-the-exclusive-savings",
 	tags: ["special-conditions"],
 	description:
@@ -22,12 +20,11 @@ export const ttbTheExclusiveSavings: SavingsProduct = {
 		"ธนาคารจะหักเงินเพื่อชำระเบี้ยประกันชีวิตอัตโนมัติ",
 	],
 	metadata: {
-		officialName:
-			"บัญชีเงินฝากออมทรัพย์พิเศษ ทีทีบี ดิ เอ็กซ์คลูซีฟ",
+		officialName: "บัญชีเงินฝากออมทรัพย์พิเศษ ทีทีบี ดิ เอ็กซ์คลูซีฟ",
 		productCategory: "เงินฝากออมทรัพย์",
-		interestCalculation:
-			"คำนวณดอกเบี้ยแบบลอยตัว + ดอกเบี้ยโบนัสตั้งแต่บาทแรก",
+		interestCalculation: "คำนวณดอกเบี้ยแบบลอยตัว + ดอกเบี้ยโบนัสตั้งแต่บาทแรก",
 		payoutFrequency: "ปีละ 2 ครั้ง (สิ้นเดือนมิถุนายน และ ธันวาคม)",
 		notes: "อัตราดอกเบี้ยมีผล ณ มี.ค. 2569",
 	},
+	updatedAt: "2026-03-24",
 };

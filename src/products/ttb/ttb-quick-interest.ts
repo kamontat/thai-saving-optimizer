@@ -26,14 +26,14 @@ export const ttbQuickInterest3m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.45 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"ฝากประจำ 3 เดือน รับดอกเบี้ยทั้งก้อนภายใน 7 วัน ไม่ต้องรอครบกำหนด",
+	description: "ฝากประจำ 3 เดือน รับดอกเบี้ยทั้งก้อนภายใน 7 วัน ไม่ต้องรอครบกำหนด",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ ทีทีบี ดอกเบี้ยด่วน 3 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยภายใน 7 วันหลังฝาก",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const ttbQuickInterest12m: FixedDepositProduct = {
@@ -47,12 +47,12 @@ export const ttbQuickInterest12m: FixedDepositProduct = {
 	tiers: [{ min: 0, max: Number.POSITIVE_INFINITY, rate: 0.95 }],
 	url: baseUrl,
 	tags: [],
-	description:
-		"ฝากประจำ 12 เดือน รับดอกเบี้ยทั้งก้อนภายใน 7 วัน ไม่ต้องรอครบกำหนด",
+	description: "ฝากประจำ 12 เดือน รับดอกเบี้ยทั้งก้อนภายใน 7 วัน ไม่ต้องรอครบกำหนด",
 	conditions: baseConditions,
 	metadata: {
 		...baseMetadata,
 		officialName: "เงินฝากประจำ ทีทีบี ดอกเบี้ยด่วน 12 เดือน",
 		payoutFrequency: "จ่ายดอกเบี้ยภายใน 7 วันหลังฝาก",
 	},
+	updatedAt: "2026-03-24",
 };

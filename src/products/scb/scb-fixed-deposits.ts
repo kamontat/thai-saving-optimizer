@@ -31,6 +31,7 @@ export const scbFixed3m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 3 เดือน (E-Passbook)",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const scbFixed6m: FixedDepositProduct = {
@@ -50,6 +51,7 @@ export const scbFixed6m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 6 เดือน (E-Passbook)",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const scbFixed12m: FixedDepositProduct = {
@@ -69,6 +71,7 @@ export const scbFixed12m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 12 เดือน (E-Passbook)",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const scbFixed24m: FixedDepositProduct = {
@@ -88,6 +91,7 @@ export const scbFixed24m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 24 เดือน (E-Passbook)",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
 
 export const scbFixed36m: FixedDepositProduct = {
@@ -107,4 +111,5 @@ export const scbFixed36m: FixedDepositProduct = {
 		officialName: "เงินฝากประจำ 36 เดือน (E-Passbook)",
 		payoutFrequency: "จ่ายดอกเบี้ยเมื่อครบกำหนด",
 	},
+	updatedAt: "2026-03-24",
 };
